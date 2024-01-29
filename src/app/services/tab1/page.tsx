@@ -1,13 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import 'tailwindcss/tailwind.css'
-import "../styles/tab1.css";
-import earth from "../../../public/earth.png"
-import image1 from "../../../public/digital transformation.webp"
-import image2 from "../../../public/digital.jpg";
-import flower from "../../../public/whiteflowers.jpg"
-
-
+import "../../styles/tab1.css";
 
 
 const tab1 = () => {
@@ -17,8 +11,8 @@ const tab1 = () => {
       <h1 className='digital'>Digital Transformation</h1>
       </div>
           <div className="image">
-                  <Image src={image2} alt="image2" className="image2"  width={400}></Image>
-                  <Image src={image1} alt="image1" className="image1"  width={600}></Image>
+                  <Image src={"/digital.jpg"} alt="image2" className="image2"  width={400} height={500}></Image>
+                  <Image src={"/digital transformation.webp"} alt="image1" className="image1"  width={600} height={500}></Image>
           </div>
            <div className="info">
             <div className="legacy">
@@ -40,7 +34,7 @@ const tab1 = () => {
 
             </div>
             <div className="flowerimage">
-              <Image src={flower} alt="flowerimage" width={400}></Image>
+              <Image src={"/whiteflowers.jpg"} alt="flowerimage" width={400} height={500}></Image>
             </div>
       </div>
   

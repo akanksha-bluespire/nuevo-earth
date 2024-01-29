@@ -25,7 +25,7 @@
 }
 .planeshape{
     float: left;
-    background-color: rgb(98, 204, 53);
+    background: linear-gradient(rgb(54, 130, 11),rgb(123, 228, 43));
     width: 50%;
     height: 480px;
 }

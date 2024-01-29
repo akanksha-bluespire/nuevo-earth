@@ -25,7 +25,7 @@
 }
 .planeshape{
     float: left;
-    background-color: rgb(98, 204, 53);
+    background-color: rgb(71, 204, 234);
     width: 50%;
     height: 480px;
 }
@@ -75,3 +75,5 @@
     margin-left: 65%;
     transform: translate(0rem,45rem);
 }
+
+/* Media Queries for responsiveness */
