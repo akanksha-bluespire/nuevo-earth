@@ -1,26 +1,29 @@
 /* each section margin bottom is 10% */
 .background {
-  color: white;
+  /* color: white;
   background-image:
     url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: larger; */
+  color: black;
+  background-color: white;
 }
 
 .flexContainerWho {
   margin-bottom: 10%;
+  text-align: center;
   width: 100%;
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
   @media (max-width: 767px) {
     flex-direction: column;
   }
 }
 
 .flexContainer2 {
-  background-color: gray;
+  /* background-color: gray; */
   margin-bottom: 10%;
   width: 100%;
   display: flex;
@@ -32,13 +35,14 @@
     padding: 0;
   }
 }
-
+.ourMissionHeading{
+  margin-bottom: 8%;
+}
 .ourMissionContent {
   flex: 1;
   padding: 0px 100px;
   line-height: 30px;
   width: 100%;
-
   @media (max-width: 767px) {
     padding: 0px;
     text-align: center;
@@ -56,27 +60,31 @@
 }
 
 .whoWeAreHeading {
-  margin-bottom: 10%;
-
-  @media (max-width: 767px) {
-    text-align: center;
-  }
+  margin: 0;
 }
 
 
 .whoWeAreContent {
-  background-color: rgb(145, 238, 145, 0.682);
+  background-color: rgb(145, 238, 145);
   line-height: 30px;
   flex: 1;
   padding: 40px;
-
+/*
   @media (max-width: 767px) {
     padding: 0px 20px;
-  }
+  } */
+  flex: 1;
 }
 
 .whoimage {
-  flex: 1;
+  width: 100%;
+  height: 250px;
+  background-image: url('https://images.unsplash.com/photo-1497384401032-2182d2687715?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .partners {
@@ -86,14 +94,14 @@
 
 .partnersHeading {
   text-align: center;
-  margin-bottom: 12%;
+  margin-bottom: 10%;
 }
 
 .partnersContainer {
+  text-align: center;
   width: 100%;
   display: flex;
   justify-content: space-around;
-
   @media (max-width: 767px) {
     flex-direction: column;
     align-items: center;
