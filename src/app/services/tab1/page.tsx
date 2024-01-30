@@ -4,7 +4,7 @@ import 'tailwindcss/tailwind.css'
 import "../../styles/tab1.css";
 
 
-const tab1 = () => {
+const servicetab1 = () => {
   return (
     <div className="background">
       <div className="planeshape">
@@ -40,4 +40,4 @@ const tab1 = () => {
   
   )
     }
-export default tab1
+export default servicetab1

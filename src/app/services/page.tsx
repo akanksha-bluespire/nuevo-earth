@@ -1,11 +1,12 @@
+
 import Image from 'next/image'
 import React from 'react'
 import "../styles/mainService.css";
-import mainheader from "../../../public/mainheader.jpg"
-import insect from "../../../public/insect.png"
-import tech1 from "../../../public/tech1.jpg"
-import tech2 from "../../../public/tech2.jpg"
 import { OurservicesFooter,OurservicesHeader,getintouch } from '../../../utils/info'
+import App from '../cards/page';
+import Getintouch from "../components/getintouch"
+
+
 const MainServicePage = () => {
   return (
     <div className="background">
@@ -18,18 +19,17 @@ const MainServicePage = () => {
             <p>{OurservicesHeader}</p>
         </div>
         <div className="Header">
-          <Image src={tech2} alt="image1 " width={500} className='tech2'></Image>
+          <Image src={"/tech2.jpg"} alt="image1 " width={500} height={700} className='tech2'></Image>
         </div>
         </div>
         <div className="cards">
-
+          <App/>
         </div>
-        <div className="ServicesFooter px-10">
+        <div className="ServicesFooter">
             <p>{OurservicesFooter}</p>
         </div>
         <p className='getintouchinfo'>{getintouch}</p>
-
-        <button type='button' className='getintouch'>Get in touch</button>
+        <Getintouch/>
     </div>
   )
 }

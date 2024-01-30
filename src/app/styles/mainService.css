@@ -2,18 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* color: white; */
-  /* background-color: black; */
 }
 body{
   margin: 0;
   padding: 0;
   min-height: 100vh;
- display: flex;
- flex-direction: column;
- /* background-color: black; */
-
-
 }
 .background{
   /* background-image: url("https://images.unsplash.com/photo-1568832359672-e36cf5d74f54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
@@ -38,71 +31,76 @@ body{
 .title{
       font-size: 55px;
       font-weight: bold;
-      margin-bottom: 2rem;
+      margin-bottom: 3%;
       color: rgb(66, 177, 23);
     }
     .ServicesHeader{
       flex: 1;
-      padding: 20px;
-      margin-top: 50px;
-      margin-left: 100px;
-      margin-bottom: 50px;
       font-size: 20px;
-      position: relative;
+      margin-top: 5%;
     }
-    .cards{
+    /* .cards{
       padding: 20rem;
       background-color: rgb(34, 181, 218);
       opacity: 0.5;
-    }
+    } */
     .ServicesFooter{
       padding: 10px;
-      margin-left: 100px;
+      margin-left: 7%;
       margin-bottom: 20px;
       font-size: 20px;
-      margin-right: 100px;
+      margin-right: 5%;
       text-align: justify;
     }
-    .Header{
-      margin-left: 0px;
-      float: right;
-      margin-right: 5rem;
-      position: relative;
+    /* .Header{
       background-color: #e9f2e5;
-      padding: 5px;
-      margin-bottom: 50px;
+      padding: 0.5%;
+      margin-left: 5%;
+      margin-bottom: 5%;
       border-radius: 15px;
       box-shadow: 0px 0px 10px rgba(0,0,0,50);
-    }
+    } */
     .top{
       display: flex;
-      align-items: center;
-      margin-top: 10rem;
-      margin-bottom: 5rem;
+      margin-left: 7%;
+      margin-right: 5%;
+      padding-top: 5%;
+      padding-bottom: 5%;
     }
     .tech2{
-      border-radius: 15px;
-      width: 500px;
+      background-color: azure;
+      padding: 2%;
+      box-shadow: 0px 0px 10px rgba(0,0,0,50);
+      border-radius: 20px;
+      animation: bounce1 1.5s;
     }
 
     .getintouch{
+      position: absolute;
       color: black;
       background: linear-gradient(rgb(72, 224, 72),rgb(30, 163, 161));
       padding: 15px;
       border-radius: 25px;
       margin-top: 25px;
-      margin-left: 120px;
+      margin-left: 7%;
       border: 2px solid white;
-
       margin-bottom: 10rem;
+      cursor: pointer;
+
       
     }
     .getintouchinfo{
       padding: 20px;
-      margin-left: 100px;
       font-size: 20px;
-      margin-left: 100px;
-    }
+      margin-left: 7%;
+      margin-right: 5%;
+    } 
 
+    @keyframes bounce1{
+      0%{
+        transform: 100px;
+        opacity: 0;
+      }
+    }
     
   
