@@ -8,20 +8,20 @@ body {
     height: 100vh;
     overflow: scroll;
     
+    
 }
 
 .product-card {
     /* border: 1px solid grey; */
-    border-radius: 8px;
     padding: 10px;
     display: flex;
     align-items: stretch;
     justify-content: flex-start;
     margin-bottom: 20px;
     gap: 30px;
-    background-color: #ffffff;
+    background-color:white;
 
-    border-radius: 8px;
+ /* border-radius: 8px; */
     box-shadow: 0 4px 8px rgba(165, 69, 69, 0.1);
     transition: box-shadow 0.3s ease-in-out;
 }
@@ -39,7 +39,7 @@ body {
 .view-button {
     border-radius: 8px;
     border: 1px solid #000000;
-    background-color: hsl(0, 0%, 0%);
+    background-color: hsl(120, 4%, 5%);
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
@@ -56,12 +56,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 350px;
+    width: 300px;
+    min-height: 150px; /* Set a minimum height */
     border: 1px solid grey;
     border-radius: 8px;
     padding: 10px;
+    font-family: "Poppins";
     background-color: #ffffff;
+}
 
+
+.single-card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-img {
@@ -85,6 +91,6 @@ body {
 }
 
 .card-content {
-    font-size: 1rem;
+    font-size:24px ;
     color: #333;
 }

@@ -16,7 +16,7 @@ const App: React.FC = () => {
     {
       title: "Card 3",
       imageUrl: "https://www.optelgroup.com/app/uploads/2023/07/title-2_2197170163_img_800x530_2.jpg",
-      description: "environmental software assessment ",
+      description: "environmental software assessmnbsjdbjsbjdskfnknslkfnksbjfbsknfksbent ",
     },
     {
       title: "Card 4",

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "../../styles/product.css"
 import "../../../../public/Nature.jpg"
 import "../../../../public/E-com.jpg"
+import "@fontsource/poppins";
 
 interface ProductItem {
   image: string;
@@ -22,7 +23,7 @@ const View = () => {
     }
   };
 
-  useEffect(() => {
+ useEffect(() => {
     // Check if localStorage is available before using it
     if (typeof window !== "undefined") {
       const productData = localStorage.getItem("product");
@@ -38,29 +39,24 @@ const View = () => {
   console.log("productname", product)
   return (
     <div className="px-20">
-
-      <h2 className="text-4xl font-bold text-black text-center py-5 ">
+      <h2 className="text-4xl font-bold text-black text-center py-10">
         Product Details
       </h2>
-      <div className="flex flex-wrap items-center justify-between gap-2">
-      {
-        product?.content.map((item: ProductItem, index: number) => {
-          console.log("item", item)
-          return (
-            <div className="single-card" key={index}>
-              <div className="card-img">
-                <img
-                  src={"/E-com.jpg"}
-                  alt="e permit"
-                  className="object-contain"
-                />
-              </div>
-              <p className="my-3 text-black font-bold text-2xl justify-center">{item?.name}</p>
-              <p className="text-black font-normal text-base">{item?.description}</p>
+
+      {/* Use grid and create a 3x3 grid for the cards */}
+      <div className="grid grid-cols-3 gap-0.5 p-2 m-2 over py-2">
+        {product?.content.map((item: ProductItem, index: number) => (
+          <div className="single-card" key={index}>
+            <div className="card-img">
+              <img 
+              src={item.image}
+               alt={item.name}
+               className="object-contain" />
             </div>
-          )
-        })
-      }
+            <p className="text-black font-bold text-2xl justify-center font-poppins">{item?.name}</p>
+            <p className="text-black font-normal text-base font-poppins-regular">{item?.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

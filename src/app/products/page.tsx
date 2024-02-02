@@ -10,7 +10,7 @@ type Product = {
   description: string;
   image: string;
   detail: string;
-  content: { id: string; name: string; description:string,}[];
+  content: { id: string; name: string; description:string,image:string}[];
 };
 
 const Products = () => {
@@ -21,12 +21,12 @@ const Products = () => {
       name: "E-Permits / Registrations",
       image: "/E-com.jpg",
       content : [
-        {id:"1",name : "Concrete Batch Plant (CBP) ",description:"KYB-Conmat Mobile Concrete Batching Plant have the world's latest Twin Shaft Mixer technology for fast and homogeneous mixing with fully automatic PLC control system with SCADA/HMI. Its Rugged and compact design makes it suitable for handling all types of concrete with high accuracy and minimum maintenance."},
-        {id:"2",name : "Crushing & Screening Plant (C&S) ",description:"A crushing plant setup is a series of machines that are designed to take large pieces of concrete, asphalt or rock and break them into smaller pieces. The crushed material can then be used for construction, landscaping, and other purposes."},
-        {id:"3",name : "Hot-Mix Asphalt Plant (HMAP)",description:"HMA is the traditional process for constructing asphalt pavements. HMA is manufactured in a central mixing facility (typically called a hot mix plant) and consists of high quality aggregate and asphalt cement. The two are heated and mixed while hot to completely coat the aggregate with asphalt cement."},
-        {id:"4",name : "Construction GP",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
-        {id:"5",name : "Multi-Sector GP",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
-        {id:"6",name : "Description text goes here",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
+        {id:"1",name : "Concrete Batch Plant (CBP) ",description:" Mobile Concrete Batching Plant have the world's latest Twin Shaft Mixer technology for fast and homogeneous mixing with fully automatic PLC control system with SCADA/HMI. Its Rugged and compact design makes it suitable for handling all types of concrete with high accuracy and minimum maintenance.",image: "/Nature.jpg"},
+        {id:"2",name : "Crushing & Screening Plant (C&S) ",description:"A crushing plant setup is a series of machines that are designed to take large pieces of concrete, asphalt or rock and break them into smaller pieces. The crushed material can then be used for construction, landscaping, and other purposes.KYB-Conmat Mobile Concrete Batching Plant have the world's",image: "/E-com.jpg"},
+        {id:"3",name : "Hot-Mix Asphalt Plant (HMAP)",description:"HMA is the traditional process for constructing asphalt pavements. HMA is manufactured in a central mixing facility (typically called a hot mix plant) and consists of high quality aggregate and asphalt cement. The two are heated and mixed while hot to completely coat the aggregate with asphalt cement.",image: "/E-com.jpg"},
+        {id:"4",name : "Construction GP",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/Nature.jpg"},
+        {id:"5",name : "Multi-Sector GP",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/E-com.jpg",},
+        {id:"6",name : "Description text goes here",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/Nature.jpg"},
       
       ],
       detail:
@@ -41,12 +41,12 @@ const Products = () => {
       name: "E-Compliance Reporting",
       image: "/E-com.jpg",
       content : [
-        {id:"1",name : "Rock Products Annual Compliance",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
-        {id:"2",name : "Air Quality Excess Emissions ",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
-        {id:"3",name : "Air Quality Excess Emissions ",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
-        {id:"4",name : "surya",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
-        {id:"5",name : "raj",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
-        {id:"6",name : "kumar",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
+        {id:"1",name : "Rock Products Annual Compliance",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/E-com.jpg"},
+        {id:"2",name : "Air Quality Excess Emissions ",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/Nature.jpg"},
+        {id:"3",name : "Air Quality Excess Emissions ",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/Nature.jpg"},
+        {id:"4",name : "surya",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/E-com.jpg"},
+        {id:"5",name : "raj",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/Nature.jpg"},
+        {id:"6",name : "kumar",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/E-com.jpg"},
       
       ],
       detail:
@@ -59,9 +59,9 @@ const Products = () => {
       name: "Other Applications",
       image: "/E-com.jpg",
       content : [
-        {id:"1",name : "Operator Certification Online Portal",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
-        {id:"2",name : "Open Burn Permit Online Portal",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
-        {id:"3",name : "Vehicle Emissions Testing Exemptions",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?"},
+        {id:"1",name : "Operator Certification Online Portal",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/Nature.jpg"},
+        {id:"2",name : "Open Burn Permit Online Portal",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/E-com.jpg"},
+        {id:"3",name : "Vehicle Emissions Testing Exemptions",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam voluptas sunt numquam dolorum accusantium dolor praesentium porro eligendi ad natus repellendus! Eveniet alias, ex neque itaque deserunt provident minima?",image: "/Nature.jpg"},
       ],
       detail:
         "It all begins with an idea. Maybe you want to launch a business. Whatever it is, the way you tell your story online can make all the difference",
@@ -73,7 +73,7 @@ const Products = () => {
   return (
     <div>  
     <div className="px-20 py-5">
-      <h2 className="text-4xl font-bold text-black text-center">Products</h2>
+      <h2 className="text-4xl font-bold text-black-500 text-center ">Products</h2>
       <p className="text-3xl font-medium text-black my-4">What we offer</p>
       {products.map((product, index) => (
         <div key={index} className="product-card">
