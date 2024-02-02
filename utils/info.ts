@@ -1,0 +1,3 @@
+export const OurservicesHeader="    Nuevo Earth Solutions aim to empower environmental organizations and agencies to embrace digital innovation, enhance environmental data management, ensure regulatory compliance, and advance sustainability efforts through tailored software solutions and expert guidance.";
+export const OurservicesFooter ="With these specialized services, Nuevo Earth aims to empower environmental organizations and agencies to embrace digital innovation, enhance environmental data management, ensure regulatory compliance, and advance sustainability efforts through tailored software solutions and expert guidance.";
+export const getintouch ="Reach out to us anytime. We’re ready to take on any WordPress question.";
