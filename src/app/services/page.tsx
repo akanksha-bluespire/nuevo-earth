@@ -12,8 +12,8 @@ const MainServicePage = () => {
     <div className="background">
       <div className="background-image">
       {/* <Image src={mainheader} alt="Background Image" layout="fill" objectFit="cover" /> */}
-      </div>
-        <div className='top'>
+      </div >
+        <div className='top flex flex-wrap gap-5'>
         <div className="ServicesHeader">
         <h1 className='title'>Services We Provide</h1>
             <p>{OurservicesHeader}</p>
@@ -29,7 +29,7 @@ const MainServicePage = () => {
             <p>{OurservicesFooter}</p>
         </div>
         <p className='getintouchinfo'>{getintouch}</p>
-        <Getintouch/>
+        <Getintouch />
     </div>
   )
 }

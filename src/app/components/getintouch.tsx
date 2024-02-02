@@ -7,7 +7,7 @@ const Getintouch= () => {
   return (
     <div>
       <Link href="/about">
-    <button className="getintouch">
+    <button className="btn btn-primary">
       Get in touch</button>
       </Link>
   </div>

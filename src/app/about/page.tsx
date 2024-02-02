@@ -1,6 +1,6 @@
 import Image from 'next/image'
+
 import "../styles/about.css"
-import hills from "../../../public/hills.avif"
 import { ourMission, partnersAndOrganizations, teamList, whoWeAre } from '../../../utils/constants'
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         </div>
         <div className="whoimage">
           <Image
-            src={hills}
+            src={"/hills"}
             alt="Hills"
             width={400}
             height={400}

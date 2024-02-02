@@ -37,7 +37,7 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="grid grid-cols-3 p-5 bg-gray-200">
+    <div className="grid grid-cols-3 p-5 bg-gray-200 m-[5%]">
       {cardData.map((card, index) => (
         <Card key={index} {...card} />
       ))}
