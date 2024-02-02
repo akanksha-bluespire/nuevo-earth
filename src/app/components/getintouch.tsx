@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Getintouch= () => {
   return (
     <div>
-      <Link href="/about">
+      <Link href="/contact">
     <button className="btn btn-primary">
       Get in touch</button>
       </Link>

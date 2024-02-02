@@ -8,7 +8,8 @@ import { useRef } from 'react';
 import App from '@/app/cards/page';
 import { OurservicesFooter, getintouch } from '../../../../utils/info';
 import Getintouch from '@/app/components/getintouch';
-
+import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
 
 
 
@@ -16,6 +17,7 @@ const servicesmainpage = () => {
   const cards = useRef<HTMLDivElement>(null);
   return (
     <div className='w-full h-full bg-cover' >
+      <Header/>
           <div className="flex justify-center items-center flex-col">
                 <div className="w-full h-screen bg-[url('https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg')] bg-cover bg-center">
                       <div className="w-full h-full flex flex-col justify-center items-center backdrop-brightness-50 opa">
@@ -36,6 +38,7 @@ const servicesmainpage = () => {
             <p className='mb-8'>{getintouch}</p>
             <Getintouch/>
             </div>
+            <Footer/>
     </div>
     
   )
