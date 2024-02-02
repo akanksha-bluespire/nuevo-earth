@@ -30,7 +30,7 @@ const AnimatedCounter = ({label,endCount, className}) => {
     return (
         <div className='text-center mx-4'>
             <h2 className='text-xl font-semibold mb-4'>{label}</h2>
-            <p className='text-3xl font-regular text-green-500'>{count}+</p>
+            <p className='text-3xl font-semibold text-green-500'>{count}+</p>
         </div>
     );
 };
