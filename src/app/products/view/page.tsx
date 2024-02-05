@@ -23,7 +23,7 @@ const View = () => {
     }
   };
 
- useEffect(() => {
+  useEffect(() => {
     // Check if localStorage is available before using it
     if (typeof window !== "undefined") {
       const productData = localStorage.getItem("product");
@@ -44,17 +44,17 @@ const View = () => {
       </h2>
 
       {/* Use grid and create a 3x3 grid for the cards */}
-      <div className="grid grid-cols-3 gap-0.5 p-2 m-2 over py-2">
+      <div className="flex flex-wrap items-center justify-between py-2">
         {product?.content.map((item: ProductItem, index: number) => (
           <div className="single-card" key={index}>
-            <div className="card-img">
-              <img 
-              src={item.image}
-               alt={item.name}
-               className="object-contain" />
+            <div className="card-img ">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="object-cover w-full h-full" />
             </div>
             <p className="text-black font-bold text-2xl justify-center font-poppins">{item?.name}</p>
-            <p className="text-black font-normal text-base font-poppins-regular">{item?.description}</p>
+            <p className="card-des">{item?.description}</p>
           </div>
         ))}
       </div>
