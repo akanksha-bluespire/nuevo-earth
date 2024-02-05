@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Header from './Header';
+import Footer from '@/app/components/Footer';
 
 const HomePage = () => {
   return (

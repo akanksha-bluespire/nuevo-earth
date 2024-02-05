@@ -8,11 +8,10 @@ import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
 import 'tailwindcss/utilities.css';
 import 'tailwindcss/tailwind.css'
-
-
+import Footer from './components/Footer';
 const Home = () =>{
     return (
-        <div className="container mx-auto">
+        <div className="w-full">
             
 
            <HomePage/>
@@ -37,7 +36,9 @@ const Home = () =>{
                 <h2 className='text-3xl font-bold text-center mb-10'>Our Clients</h2>
                 <Clients/>
             </div>
-           
+            <div className='mt-10'>
+           < Footer />
+           </div>
         </div>
     );
 };
