@@ -33,12 +33,19 @@ const Home = () => {
         <AnimatedCounter label="Awards Received" endCount={25} className="flex-1" />
         <AnimatedCounter label="Team Members" endCount={40} className="flex-1" />
       </div>
-      <Cards />
+
+      <div>
+        <h2 className='text-3xl font-bold mb-4 text-center mb-10'>What we do</h2>
+        <Cards />
+      </div>
+
 
       <div>
         <h2 className='text-3xl font-bold text-center mb-10'>Our Clients</h2>
         <Clients />
       </div>
+
+
 
     </div>
   );
