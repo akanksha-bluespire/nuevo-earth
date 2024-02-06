@@ -10,12 +10,10 @@ import { OurservicesFooter, getintouch } from '../../../../utils/info';
 import Getintouch from '@/app/components/getintouch';
 
 
-
-
 const Servicesmainpage = () => {
       const cards = useRef<HTMLDivElement>(null);
       return (
-            <div className='w-full h-full bg-cover' >
+            <div className='w-full h-full bg-cover'>
                   <div className="flex justify-center items-center flex-col">
                         <div className="w-full h-screen bg-[url('https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg')] bg-cover bg-center">
                               <div className="w-full h-full flex flex-col justify-center items-center backdrop-brightness-50 opa">
@@ -36,8 +34,7 @@ const Servicesmainpage = () => {
                         <p className='mb-8'>{getintouch}</p>
                         <Getintouch />
                   </div>
-            </div>
-
-      )
+    </div>
+  )
 }
 export default Servicesmainpage
