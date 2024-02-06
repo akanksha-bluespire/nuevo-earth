@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <div className="text-white font-bold p-2 md:p-3 fixed top-0 left-0 z-50 w-full bg-slate-900">
+    <div className="text-white font-bold p-2 md:p-3 fixed top-0 left-0 z-50 w-full bg-sky-900">
       <div className="flex justify-between items-center">
         {/* Logo and Home Link */}
         <div className="cursor-pointer">
@@ -28,25 +28,24 @@ const Header = () => {
 
         {/* Navigation Links */}
         <ul
-          className={`md:flex  ${
-            mobileMenuOpen
-              ? 'fixed top-10 right-5 p-4 flex-col items-center justify-center'
-              : 'hidden md:flex space-x-4'
-          }`}
+          className={`md:flex  ${mobileMenuOpen
+            ? 'fixed top-10 right-5 p-4 flex-col items-center justify-center'
+            : 'hidden md:flex space-x-5 mr-[1%]'
+            }`}
         >
-          <li className="font-medium cursor-pointer text-white font-serif text-sm md:text-lg hover:text-cyan-200 hover:overline mb-2 md:mb-0">
+          <li className="font-medium cursor-pointer text-white text-xs md:text-sm hover:text-cyan-200 hover:overline mb-2 md:mb-0 font-poppins">
             <Link href="/">Home</Link>
           </li>
-          <li className="font-medium cursor-pointer text-white font-serif text-sm md:text-lg hover:text-cyan-200 hover:overline mb-2 md:mb-0">
+          <li className="font-medium cursor-pointer text-white font-poppins text-xs md:text-sm hover:text-cyan-200 hover:overline mb-2 md:mb-0">
             <Link href="/products">Products</Link>
           </li>
-          <li className="font-medium cursor-pointer text-white font-serif text-sm md:text-lg hover:text-cyan-200 hover:overline mb-2 md:mb-0">
+          <li className="font-medium cursor-pointer text-white font-poppins text-xs md:text-sm hover:text-cyan-200 hover:overline mb-2 md:mb-0">
             <Link href="/services">Services</Link>
           </li>
-          <li className="font-medium cursor-pointer text-white font-serif text-sm md:text-lg hover:text-cyan-200 hover:overline mb-2 md:mb-0">
+          <li className="font-medium cursor-pointer text-white font-poppins text-xs md:text-sm hover:text-cyan-200 hover:overline mb-2 md:mb-0">
             <Link href="/about">About</Link>
           </li>
-          <li className="font-medium cursor-pointer text-white font-serif text-sm md:text-lg hover:text-cyan-200 hover:overline mb-2 md:mb-0">
+          <li className="font-medium cursor-pointer text-white font-poppins text-xs md:text-sm hover:text-cyan-200 hover:overline mb-2 md:mb-0">
             <Link href="/contact">Contact</Link>
           </li>
         </ul>

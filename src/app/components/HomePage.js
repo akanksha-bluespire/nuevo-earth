@@ -14,7 +14,7 @@ const HomePage = () => {
         zIndex: 1,
       }}>
         <div className='flex justify-center items-center h-screen w-full'>
-          <h2 className='text-5xl text-white text-center font-bold font-serif leading-normal'>
+          <h2 className='text-5xl text-white text-center font-bold font-Lato leading-normal'>
             Innovative Solutions for <br /> Environmental Compliance
           </h2>
         </div>
