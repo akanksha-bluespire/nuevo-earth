@@ -9,6 +9,7 @@ import { useRef } from 'react';
 const servicepage1 = () => {
   const keypointsRef = useRef<HTMLDivElement>(null);
   return (
+      <div>
     <div className='w-full h-full bg-cover' >
           <div className="flex justify-center items-center flex-col">
                 <div className="w-full h-screen bg-[url('https://wallpaperaccess.com/full/4818793.jpg')] bg-cover bg-center">
@@ -48,7 +49,7 @@ const servicepage1 = () => {
                 <Keypoints />
           </div>
     </div>
-    
+    </div>
   )
 }
 export default servicepage1
