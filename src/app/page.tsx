@@ -8,37 +8,27 @@ import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
 import 'tailwindcss/utilities.css';
 import 'tailwindcss/tailwind.css'
-import Footer from './components/Footer';
-const Home = () =>{
+const Home = () => {
     return (
         <div className="w-full">
-            
-
+           
            <HomePage/>
-
            <div className="container mx-auto mt-8 mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-center ">Our Services</h2>
                 <Carousel/>
             </div>
-
-
             <EmpowerComp/>
-        
             <div className="flex items-center justify-center mt-8 mb-8 h-36">
                 <AnimatedCounter label="Number of Projects" endCount={150} className='flex-1'/>
                 <AnimatedCounter label="Happy Clients" endCount={130} className="flex-1"/>
                 <AnimatedCounter label="Awards Received" endCount={25} className="flex-1"/>
                 <AnimatedCounter label="Team Members" endCount={40} className="flex-1"/>
             </div>
-            
-
             <div>
                 <h2 className='text-3xl font-bold text-center mb-10'>Our Clients</h2>
                 <Clients/>
             </div>
-            <div className='mt-10'>
-           < Footer />
-           </div>
+
         </div>
     );
 };

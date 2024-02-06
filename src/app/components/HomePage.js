@@ -1,7 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Header from './Header';
-import Footer from '@/app/components/Footer';
 
 const HomePage = () => {
   return (
@@ -10,14 +8,13 @@ const HomePage = () => {
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
     }}>
-      <Header />
       <div className='absolute top-0 left-0 w-full h-full' style={{
-        backgroundColor: 'rgba(0, 0, 0, 0.6)', 
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
         zIndex: 1,
       }}>
         <div className='flex justify-center items-center h-[90%]'>
           <h2 className='text-5xl text-white text-center font-bold font-serif leading-normal'>
-            Innovative Solutions for <br/> Environmental Compliance
+            Innovative Solutions for <br /> Environmental Compliance
           </h2>
         </div>
       </div>

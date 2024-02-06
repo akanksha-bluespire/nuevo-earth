@@ -1,23 +1,21 @@
 .section1 {
-    background: rgb(14, 5, 5);
-    color: white;
+    color: black;
     padding-left: 10%;
     padding-top: 5%;
   }
   .section2 {
-    background: rgb(60, 60, 60);
     display:flex;
     justify-content: space-between;
     padding-top: 10%;
     padding-bottom: 5%;
-    color: white;
+    color: black;
     padding-left: 10%;
   }
   .left, .first_name {
     float: left;
   }
   .right {
-    border: solid white;
+    border: solid black;
     padding: 50px;
     display: flex;
     margin-right: 200px;
@@ -31,14 +29,17 @@
     width: 100%;
     height: 100%;
     padding: 5px;
+    border: 2px solid black;
   }
   .message{
     width: 100%;
     height: 200%;
     padding: 5px;
+    border: 2px solid black;
   }
   
   .textarea {
+    border: 2px solid black;
     width: 100%;
     padding: 10px;
   }
