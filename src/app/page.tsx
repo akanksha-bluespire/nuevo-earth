@@ -28,7 +28,9 @@ const Home = () => {
                 <h2 className='text-3xl font-bold text-center mb-10'>Our Clients</h2>
                 <Clients/>
             </div>
+            <div className='mt-10'>
 
+           </div>
         </div>
     );
 };
