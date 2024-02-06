@@ -6,7 +6,7 @@ import { useRef } from 'react';
 import Assessmentinfo from '@/app/components/assessment';
 
 
-const servicepage3 = () => {
+const Servicepage3 = () => {
   const assessmentRef = useRef<HTMLDivElement>(null);
   return (
       <div>
@@ -29,4 +29,4 @@ const servicepage3 = () => {
     </div>
   )
 }
-export default servicepage3
+export default Servicepage3

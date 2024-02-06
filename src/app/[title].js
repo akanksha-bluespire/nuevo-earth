@@ -17,7 +17,6 @@ const DynamicPage = () => {
   return (
     <div>
       <h1>{item.title}</h1>
-      <p>{item.values}</p>
       <p>{item.description}</p>
     </div>
   );

@@ -1,6 +1,5 @@
 'use client';
 import React from 'react'
-import { Poppins } from 'next/font/google';
 import Getstartedbutton from '@/app/components/getstartedbutton'
 import { useRef } from 'react';
 import App from '@/app/cards/page';
@@ -9,7 +8,7 @@ import Getintouch from '@/app/components/getintouch';
 
 
 
-const servicesmainpage = () => {
+const Servicesmainpage = () => {
   const cards = useRef<HTMLDivElement>(null);
   return (
       <div>
@@ -37,7 +36,6 @@ const servicesmainpage = () => {
 
     </div>
     </div>
-    
   )
 }
-export default servicesmainpage
+export default Servicesmainpage

@@ -1,12 +1,12 @@
 
 'use client';
 import React from 'react'
-import Image from 'next/image'  
+import Image from 'next/image'
 import Keypoints from '@/app/components/keypoints'
 import Link from 'next/link'
 import Getstartedbutton from '@/app/components/getstartedbutton'
 import { useRef } from 'react';
-const servicepage1 = () => {
+const Servicepage1 = () => {
   const keypointsRef = useRef<HTMLDivElement>(null);
   return (
       <div>
@@ -30,11 +30,11 @@ const servicepage1 = () => {
                                     </li>
                               </ul>
 
-                            <Getstartedbutton scrollToRef={keypointsRef} />
-                      </div>
-                </div>
-          </div>
-            {/* <div className='m-[7%]'>
+                                    <Getstartedbutton scrollToRef={keypointsRef} />
+                              </div>
+                        </div>
+                  </div>
+                  {/* <div className='m-[7%]'>
             <div className=' bg-gradient-to-r from-white 40% to-emerald-300 p-[2%] m-[2%]  rounded-none w-1/2 text-center transition-transform transform hover:scale-105'>
             <h2 className='text-xl font-semibold'>Legacy System Migration </h2>
             </div>
@@ -52,4 +52,4 @@ const servicepage1 = () => {
     </div>
   )
 }
-export default servicepage1
+export default Servicepage1

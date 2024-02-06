@@ -1,13 +1,13 @@
 
 'use client';
 import React from 'react'
-import Image from 'next/image'  
+import Image from 'next/image'
 import Link from 'next/link'
 import Getstartedbutton from '@/app/components/getstartedbutton'
 import { useRef } from 'react';
 import Consultinfo from '@/app/components/consult';
 
-const servicepage2 = () => {
+const Servicepage2 = () => {
   const consultRef = useRef<HTMLDivElement>(null);
   return (
       <div>
@@ -31,4 +31,4 @@ const servicepage2 = () => {
     </div>
   )
 }
-export default servicepage2
+export default Servicepage2
