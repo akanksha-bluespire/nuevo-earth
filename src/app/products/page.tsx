@@ -80,7 +80,7 @@ const Products = () => {
         <p className="text-3xl font-medium text-black my-4">What we offer</p> */}
         <div className='top flex flex-row-reverse flex-wrap gap-10'>
           <div className="ServicesHeader">
-            <h1 className='title'>What we offer</h1>
+            <h1 className='title transition-transform transform hover:scale-125 justify-center pl-10'>What we offer</h1>
             <p>{OurservicesHeader}</p>
           </div>
           <div className="Header">
@@ -90,8 +90,11 @@ const Products = () => {
 
 
 
+        {/* {products.map((product, index) => (
+          <div className={index == 1 ? 'top flex flex-row-reverse flex-wrap items-stretch gap-5 product-box' : 'top flex flex-wrap items-stretch gap-5 product-box'}> */}
+
         {products.map((product, index) => (
-          <div className={index == 1 ? 'top flex flex-row-reverse flex-wrap items-stretch gap-5 product-box' : 'top flex flex-wrap items-stretch gap-5 product-box'}>
+          <div key={product.id} className={index == 1 ? 'top flex flex-row-reverse flex-wrap items-stretch gap-5 product-box' : 'top flex flex-wrap items-stretch gap-5 product-box'}>
             <div className="productHeader flex flex-col justify-between p-10">
               <div>
                 <h1 className='titleHead'>{product?.name}</h1>
