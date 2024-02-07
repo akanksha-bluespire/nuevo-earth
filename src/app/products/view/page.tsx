@@ -59,7 +59,6 @@ const View = () => {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );
