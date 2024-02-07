@@ -75,7 +75,7 @@ const Products = () => {
 
   return (
     <div>
-      <div className="px-20 py-5">
+      <div className="px-20 py-5 m-2">
         {/* <h2 className="text-4xl font-bold text-black-500 text-center ">Products</h2>
         <p className="text-3xl font-medium text-black my-4">What we offer</p> */}
         <div className='top flex flex-row-reverse flex-wrap gap-10'>
