@@ -18,8 +18,8 @@ const Home = () => {
 
       <HomePage />
 
-      <div className="container mx-auto mt-8 mb-8">
-        <h2 className="text-3xl font-bold mb-4 text-center ">Our Services</h2>
+      <div className="container mx-auto mt-16 mb-16 ">
+        {/* <h2 className="text-3xl font-bold mb-4 text-center ">Our Services</h2> */}
         <Carousel />
       </div>
 
