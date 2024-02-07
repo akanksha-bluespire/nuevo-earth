@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.background{
+.background {
 
     margin: 0;
     padding: 0;
 }
 
-.info{
+.info {
     padding: 10px;
     position: absolute;
     top: 80%;
@@ -18,31 +18,36 @@
     transform: translate(-0%, -60%);
 
 }
-.digital{
+
+.digital {
     font-size: 40px;
     padding: 4rem;
     color: white;
 }
-.planeshape{
+
+.planeshape {
     float: left;
-    background: linear-gradient(rgb(54, 130, 11),rgb(123, 228, 43));
+    background: linear-gradient(rgb(54, 130, 11), rgb(123, 228, 43));
     width: 50%;
     height: 480px;
 }
-.image{
+
+.image {
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: row;
     position: absolute;
 }
-.image1{
+
+.image1 {
     margin-left: 20px;
     margin-top: 5%;
     height: 350px;
     background-color: white;
     padding: 3px;
 }
-.image2{
+
+.image2 {
     margin-left: 20px;
     margin-top: 15%;
     background-color: white;
@@ -51,13 +56,14 @@
     height: 400px;
 }
 
-.key{
+.key {
     color: rgb(111, 19, 19);
     margin-bottom: 10px;
     font-size: x-large;
     font-weight: bolder;
 }
-.keycomponents{
+
+.keycomponents {
     position: absolute;
     margin-top: 45rem;
     margin-left: 100px;
@@ -65,13 +71,19 @@
     text-align: justify;
 
 }
-.points{
+
+.points {
     margin-bottom: 10px;
     margin-top: 10px;
     font-weight: bold;
 }
-.flowerimage{
+
+.flowerimage {
     position: relative;
     margin-left: 65%;
-    transform: translate(0rem,45rem);
+    transform: translate(0rem, 45rem);
+}
+
+slick-prev:before {
+    content: '';
 }
