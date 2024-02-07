@@ -1,15 +1,16 @@
 
 'use client';
 import React from 'react'
-import Image from 'next/image'  
+import Image from 'next/image'
 import Link from 'next/link'
 import Getstartedbutton from '@/app/components/getstartedbutton'
 import { useRef } from 'react';
 import Consultinfo from '@/app/components/consult';
 
-const servicepage2 = () => {
+const Servicepage2 = () => {
   const consultRef = useRef<HTMLDivElement>(null);
   return (
+      <div>
     <div className='w-full h-full bg-cover' >
           <div className="flex justify-center items-center flex-col">
                 <div className="w-full h-screen bg-[url('https://realitysolutions.co.uk/wp-content/uploads/2020/03/shutterstock_71639383-scaled.jpg')] bg-cover bg-center">
@@ -27,7 +28,7 @@ const servicepage2 = () => {
                 <Consultinfo />
           </div>
     </div>
-    
+    </div>
   )
 }
-export default servicepage2
+export default Servicepage2
