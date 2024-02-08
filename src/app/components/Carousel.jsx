@@ -9,29 +9,19 @@ const Carousel = () => {
 
     const services = [
         {
-            id: 1,
             title: 'Reduced permit application processing times by an average of 95 percent',
-            description: "Description for Service 1"
         },
         {
-            id: 2,
             title: 'An estimated annual economic benifits of $268 million realized for Arizona',
-            description: "Description for Service 2"
         },
         {
-            id: 3,
             title: '2022 & 2018 NASCIO.2021 Granicus Digital Government.2021 Gartner Case Study.2020 CIO 100 awards and more',
-            description: "Description for Service 3"
         },
         {
-            id: 4,
             title: 'Digital  enterprise e-permitting solution(myDEQ) saved Arrizona DEQ $XX million dollars',
-            description: "Description for Service 4"
         },
         {
-            id: 5,
             title: 'Eliminate over 90% of application errors even before submittal',
-            description: "Description for Service 5"
         },
 
     ];
@@ -41,9 +31,12 @@ const Carousel = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        centerPadding: "60px",
+        centerPadding: '0px',
         autoplay: true,
+        arrows: false,
         autoplaySpeed: 2000,
+
+
 
         responsive: [
             {
@@ -51,24 +44,31 @@ const Carousel = () => {
                 settings: {
                     sliderToShow: 1,
                 },
+
             },
+
         ],
     };
+
+
     return (
         <div>
-            <Slider {...settings} className="mx-[30%] h-[40%] ">
-                {services.map((service) => (
-                    <div key={service.id} className='p-4 w-[30%] flex text-center	 ' >
+            <div className=' max-w-full h-ful max-h-50 bg-gradient-to-r from-white 40% to-blue-500 p-10 relative '>
+                <Slider {...settings} className="mx-auto">
+                    {services.map((service) => (
+                        <div key={service.title} className='p-6 w-[60%] mx-auto text-center' >
+                            <p className='text-3xl font-bold mb-2 '>{service.title}</p>
+                        </div>
+                    ))}
 
-                        <h3 className='text-3xl font-bold mb-2 flex-1 '>{service.title}</h3>
+                </Slider>
 
-                    </div>
-                ))}
-
-            </Slider>
+            </div >
         </div>
+
+
     );
 };
 
-export default Carousel
+export default Carousel;
 

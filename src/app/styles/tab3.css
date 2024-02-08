@@ -84,6 +84,6 @@
     transform: translate(0rem, 45rem);
 }
 
-slick-prev:before {
+/* slick-prev:before {
     content: '';
-}
+} */

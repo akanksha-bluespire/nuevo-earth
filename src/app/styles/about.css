@@ -17,6 +17,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+
   @media (max-width: 767px) {
     flex-direction: column;
   }
@@ -35,14 +36,17 @@
     padding: 0;
   }
 }
-.ourMissionHeading{
+
+.ourMissionHeading {
   margin-bottom: 8%;
 }
+
 .ourMissionContent {
   flex: 1;
   padding: 0px 100px;
   line-height: 30px;
   width: 100%;
+
   @media (max-width: 767px) {
     padding: 0px;
     text-align: center;
@@ -69,7 +73,7 @@
   line-height: 30px;
   flex: 1;
   padding: 40px;
-/*
+  /*
   @media (max-width: 767px) {
     padding: 0px 20px;
   } */
@@ -102,6 +106,7 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+
   @media (max-width: 767px) {
     flex-direction: column;
     align-items: center;
