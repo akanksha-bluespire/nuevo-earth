@@ -7,37 +7,37 @@ const App: React.FC = () => {
       title: "Digital Transformation",
       imageUrl: "https://static.vecteezy.com/system/resources/previews/007/795/105/non_2x/digital-transformation-digitization-of-business-processes-and-modern-technology-wireframe-hand-turning-a-knob-and-selecting-digital-mode-digitalization-of-analog-data-concept-illustration-vector.jpg",
       description: "Digital Transformation",
-      redirection: "/tab1"
+      redirection: "services/servicestab1"
     },
     {
       title: "Environmental software Consulting Services",
       imageUrl: "https://media.licdn.com/dms/image/D4E12AQEK4TgOw1oW_g/article-cover_image-shrink_720_1280/0/1687944093873?e=2147483647&v=beta&t=k8F9piztFF9J7bdp3O870KQU8j8BgU73zBnvTNHwE88",
       description: "Environmental software Consulting Services",
-      redirection: "/tab2"
+      redirection: "services/servicestab2"
     },
     {
       title: "environmental software assessment ",
       imageUrl: "https://www.optelgroup.com/app/uploads/2023/07/title-2_2197170163_img_800x530_2.jpg",
       description: "environmental software assessment ",
-      redirection: "/about"
+      redirection: "services/servicestab3"
     },
     {
       title: "environmental software assessment",
       imageUrl: "https://www.pathways.prov.vt.edu/content/pathways_prov_vt_edu/en/students-and-advisors/courses/geog-2004/_jcr_content/article-image.transform/m-medium/image.jpg",
       description: "environmental software assessment",
-      redirection: "/components/tab1"
+      redirection: "services/servicestab1"
     },
     {
       title: "environmental software assessment",
       imageUrl: "https://www.shutterstock.com/image-photo/blurred-nature-cube-wooden-background-260nw-2208256399.jpg",
       description: "environmental software assessment",
-      redirection: "/about"
+      redirection: "services/servicestab2"
     },
     {
       title: "environmental software assessment",
       imageUrl: "https://5.imimg.com/data5/SELLER/Default/2022/5/GT/JP/TH/4700505/environmental-clearance-consultant-250x250.jpg",
       description: "environmental software assessment",
-      redirection: "/about"
+      redirection: "services/servicestab3"
     },
   ];
 
