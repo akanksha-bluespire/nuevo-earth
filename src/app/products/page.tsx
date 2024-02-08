@@ -102,7 +102,7 @@ const Products = () => {
               </div>
               <div>
                 <button
-                  className="view-button mt-3"
+                  className="bg-green-700 mb-[2%] px-4 py-3 text-white"
                   onClick={() => {
                     router.push(`/products/view?id=${product?.id}`);
                     localStorage.setItem("product", JSON.stringify(product));
