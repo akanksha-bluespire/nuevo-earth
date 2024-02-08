@@ -97,12 +97,12 @@ const Products = () => {
           <div key={product.id} className={index == 1 ? 'top flex flex-row-reverse flex-wrap items-stretch gap-5 product-box' : 'top flex flex-wrap items-stretch gap-5 product-box'}>
             <div className="productHeader flex flex-col justify-between p-10">
               <div>
-                <h1 className='titleHead'>{product?.name}</h1>
-                <p>{product?.description}</p>
+                <h1 className='titleHead text-2xl sm:text-4xl'>{product?.name}</h1>
+                <p className="text-sm sm:text-base">{product?.description}</p>
               </div>
               <div>
                 <button
-                  className="view-button"
+                  className="view-button mt-3"
                   onClick={() => {
                     router.push(`/products/view?id=${product?.id}`);
                     localStorage.setItem("product", JSON.stringify(product));

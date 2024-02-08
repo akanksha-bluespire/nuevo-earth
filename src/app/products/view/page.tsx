@@ -38,7 +38,7 @@ const View = () => {
   }
   console.log("productname", product)
   return (
-    <div className="px-20">
+    <div className="px-20 ">
       <h2 className="text-4xl font-bold text-black text-center py-10">
         Product Details
       </h2>
