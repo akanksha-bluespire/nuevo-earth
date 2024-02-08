@@ -17,7 +17,7 @@ const Card: React.FC<CardProps> = ({ title, imageUrl, description, redirection }
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          <Link href={redirection} className="bg-blue-500 text-white p-3 rounded-md">Read More
+          <Link href={redirection} className="bg-green-700 mb-[2%] px-4 py-3 text-white">Read More
           </Link>
 
         </div>
