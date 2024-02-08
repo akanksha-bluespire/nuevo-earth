@@ -35,10 +35,11 @@ const consultinfo = () => {
 
       <div>
       <Link href="/services">
-    <button className="btn btn-primary ml-[7%] pl-[3%] pr-[3%] mb-[6%]">
-      Back </button>
+      <button className="bg-green-700 mb-[6%] px-8 py-3 ml-[8%] text-white">
+        Back
+      </button>
       </Link>
-  </div>
+    </div>
     </div>
   );
 };
