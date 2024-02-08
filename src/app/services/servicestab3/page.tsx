@@ -6,9 +6,10 @@ import { useRef } from 'react';
 import Assessmentinfo from '@/app/components/assessment';
 
 
-const servicepage3 = () => {
+const Servicepage3 = () => {
   const assessmentRef = useRef<HTMLDivElement>(null);
   return (
+      <div>
     <div className='w-full h-full bg-cover' >
           <div className="flex justify-center items-center flex-col">
                 <div className="w-full h-screen bg-[url('https://cdn.careeronestop.org/OccVids/OccupationVideos/15-1199.01.jpg')] bg-cover bg-center">
@@ -25,7 +26,7 @@ const servicepage3 = () => {
                 <Assessmentinfo />
           </div>
     </div>
-    
+    </div>
   )
 }
-export default servicepage3
+export default Servicepage3

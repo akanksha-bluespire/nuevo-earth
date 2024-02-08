@@ -1,14 +1,15 @@
 import React from 'react';
-
+import Link from 'next/link';
 interface CardProps {
   title: string;
   imageUrl: string;
   description: string;
+  redirection: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, imageUrl, description }) => {
+const Card: React.FC<CardProps> = ({ title, imageUrl, description, redirection }) => {
   return (
-    <div className="card w-80% h-30% bg-base-100 mx-30 my-10 rounded-none transition-transform transform hover:scale-105 mr-10 ">
+    <div className="card w-full h-90 sm:w-96 bg-base-100 rounded-none transition-transform transform hover:scale-105">
       <figure>
         <img src={imageUrl} alt={title} className="w-full h-full object-cover rounded-none" />
       </figure>
@@ -16,7 +17,9 @@ const Card: React.FC<CardProps> = ({ title, imageUrl, description }) => {
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary transition-transform transform hover:scale-105 ">Read More</button>
+          <Link href={redirection} className="bg-green-700 mb-[2%] px-4 py-3 text-white">Read More
+          </Link>
+
         </div>
       </div>
     </div>
