@@ -4,29 +4,29 @@ import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import Image from "next/image"
 const Footer = () => {
   return (
-    <footer className="mt-auto bg-green-700 text-white">
+    <footer className="mt-auto  bg-cyan-950 text-white">
       <div className="py-6 pl-6">
         <Image src="/Logo.png" alt="Logo" width={150} height={100} />
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-around">
         <div className="mb-4 md:mb-0">
-          <p>
+          <p className='font-poppins'>
             <Link href="/products">
               Products
             </Link>
           </p>
-          <p>
+          <p className='font-poppins'>
             <Link href="/services">
               Services
             </Link>
           </p>
-          <p>
+          <p className='font-poppins'>
             <Link href="/about">
               About
             </Link>
           </p>
-          <p>
+          <p className='font-poppins'>
             <Link href="/contact">
               Contact
             </Link>
@@ -34,9 +34,9 @@ const Footer = () => {
         </div>
 
         <div className="mb-4 md:mb-0 text-center">
-          <p>MBDA Business Center 13 Fifth Avenue, New York, NY 10160</p>
-          <p>847-345-3255</p>
-          <p>contact@example.com</p>
+          <p className='font-poppins'>MBDA Business Center 13 Fifth Avenue, New York, NY 10160</p>
+          <p className='font-poppins'>847-345-3255</p>
+          <p className='font-poppins'>contact@example.com</p>
         </div>
 
         <div className="flex items-center justify-around mb-4 md:mb-0">
@@ -54,11 +54,11 @@ const Footer = () => {
 
       <div className="flex flex-col items-center md:flex-row justify-around py-5">
         <div className="">
-          <p className="container mx-auto text-sm">&copy; {new Date().getFullYear()} Nuevo Earth. All rights reserved.</p>
+          <p className="container mx-auto text-sm font-poppins">&copy; {new Date().getFullYear()} Nuevo Earth. All rights reserved.</p>
         </div>
         <div className="flex">
-          <p className="mb-4 md:mb-0 mr-4">Privacy policy</p>
-          <p className="mb-4 md:mb-0">Terms of use</p>
+          <p className="mb-4 md:mb-0 mr-4 font-poppins">Privacy policy</p>
+          <p className="mb-4 md:mb-0 font-poppins">Terms of use</p>
         </div>
 
       </div>

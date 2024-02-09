@@ -37,9 +37,9 @@ const Home = () => {
       </div>
       <div className='mt-10'>
 
-      </div>
-    </div>
-  );
+           </div>
+        </div>
+    );
 };
 
 export default Home;
