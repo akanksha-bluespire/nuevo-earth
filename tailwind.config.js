@@ -7,5 +7,18 @@ module.exports = {
   // theme: {
   //   extend: {},
   // },
+
+
+
+  theme: {
+    extend: {
+      fontFamily: {
+        poppins: ['var(--font-poppins)'],
+        Lora: ['var(--font-Lora'],
+
+      },
+    },
+
+  },
   plugins: [require("daisyui")],
 }

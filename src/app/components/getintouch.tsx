@@ -3,14 +3,14 @@ import React from 'react'
 import Link from 'next/link'
 
 
-const Getintouch= () => {
+const Getintouch = () => {
   return (
     <div>
       <Link href="/contact">
-    <button className="btn btn-primary">
-      Get in touch</button>
+        <button className="bg-green-700 mb-[2%] px-4 py-3 text-white">
+          Get in touch</button>
       </Link>
-  </div>
+    </div>
 
   )
 }

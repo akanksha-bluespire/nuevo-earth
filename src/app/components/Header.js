@@ -28,11 +28,10 @@ const Header = () => {
 
         {/* Navigation Links */}
         <ul
-          className={`md:flex  ${
-            mobileMenuOpen
+          className={`md:flex  ${mobileMenuOpen
               ? 'fixed top-10 right-5 p-4 flex-col items-center justify-center'
               : 'hidden md:flex space-x-4'
-          }`}
+            }`}
         >
           <li className="font-medium cursor-pointer text-white font-serif text-sm md:text-lg hover:text-cyan-200 hover:overline mb-2 md:mb-0">
             <Link href="/">Home</Link>
@@ -41,7 +40,7 @@ const Header = () => {
             <Link href="/products">Products</Link>
           </li>
           <li className="font-medium cursor-pointer text-white font-serif text-sm md:text-lg hover:text-cyan-200 hover:overline mb-2 md:mb-0">
-            <Link href="/services/Servicesmainpage">Services</Link>
+            <Link href="/services">Services</Link>
           </li>
           <li className="font-medium cursor-pointer text-white font-serif text-sm md:text-lg hover:text-cyan-200 hover:overline mb-2 md:mb-0">
             <Link href="/about">About</Link>

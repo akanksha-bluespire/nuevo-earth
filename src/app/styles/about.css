@@ -1,12 +1,5 @@
 /* each section margin bottom is 10% */
 .background {
-  /* color: white;
-  background-image:
-    url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-size: larger; */
   color: black;
   background-color: white;
 }
@@ -37,9 +30,6 @@
   }
 }
 
-.ourMissionHeading {
-  margin-bottom: 8%;
-}
 
 .ourMissionContent {
   flex: 1;
@@ -63,20 +53,11 @@
   }
 }
 
-.whoWeAreHeading {
-  margin: 0;
-}
-
-
 .whoWeAreContent {
   background-color: rgb(145, 238, 145);
   line-height: 30px;
   flex: 1;
   padding: 40px;
-  /*
-  @media (max-width: 767px) {
-    padding: 0px 20px;
-  } */
   flex: 1;
 }
 
@@ -94,12 +75,9 @@
 .partners {
   width: 100%;
   margin-bottom: 10%;
+  text-align: center;
 }
 
-.partnersHeading {
-  text-align: center;
-  margin-bottom: 10%;
-}
 
 .partnersContainer {
   text-align: center;
@@ -111,14 +89,5 @@
     flex-direction: column;
     align-items: center;
     line-height: 30px;
-  }
-}
-
-.quote {
-  padding: 20px;
-  text-align: center;
-
-  @media(max-width: 767px) {
-    padding: 2%;
   }
 }
