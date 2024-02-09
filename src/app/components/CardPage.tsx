@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ title, imageUrl, description, redirection }
 
         </div>
       </div>
-    </div>
+    // </div >
   );
 };
 
