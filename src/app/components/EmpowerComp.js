@@ -10,7 +10,7 @@ const EmpowerComp = () => {
           solutions that are designed to enhance your mission. Our founders have over 10 years of experience working directly for a state
           regulatory and permitting agency, so we know how to deliver the best possible results.
         </p>
-        <button className=' bg-blue-500 mb-[2%] px-4 py-3  text-white rounded-lg'>Read More</button>
+        <button className='bg-green-700 mb-[2%] px-4 py-3 text-white'>Read More</button>
 
       </div>
       <div className='flex-1 flex items-center justify-center ml-8 '>

@@ -15,7 +15,7 @@ export default function OurMission() {
             </div>
 
             <div className="ourMissionContent">
-                <h2 className="ourMissionHeading">Our mission</h2>
+                <h2 className="mb-4 text-3xl font-semibold">Our mission</h2>
                 <p>{ourMission}</p>
             </div>
         </div>
