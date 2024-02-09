@@ -1,9 +1,10 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import "../../styles/product.css"
-import "../../../../public/Nature.jpg"
+// import "../../../../public/Nature.jpg"
 import "../../../../public/E-com.jpg"
 import "@fontsource/poppins";
+import Image from "next/image";
 
 interface ProductItem {
   image: string;
@@ -38,16 +39,16 @@ const View = () => {
   }
   console.log("productname", product)
   return (
-    <div className="px-20">
-      <h2 className="text-4xl font-bold text-black text-center py-10">
+    <div className="px-20 ">
+      <h2 className="text-4xl font-bold text-center py-10 custom-text-color">
         Product Details
       </h2>
 
       {/* Use grid and create a 3x3 grid for the cards */}
-      <div className=" bg-gray-200 pt-5 pb-0 pl-5 pr-5 rounded-xl">
+      <div className=" bg-gray-200 pt-5 pb-1 pl-5 pr-5 rounded-xl bg-gradient-to-t from-white 40% to-green-200">
         <div className="flex flex-wrap items-center justify-between py-2">
           {product?.content.map((item: ProductItem, index: number) => (
-            <div className="single-card" key={index}>
+            <div className="single-card transition-transform transform hover:scale-105" key={index}>
               <div className="card-img ">
                 <img
                   src={item.image}

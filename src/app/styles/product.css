@@ -49,8 +49,8 @@ body {
 
 .view-button {
     border-radius: 8px;
-    border: 1px solid rgb(66, 177, 23);
-    background-color: rgb(66, 177, 23);
+    /* border: 1px solid rgb(66, 177, 23);
+    background-color: rgb(66, 177, 23); */
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
@@ -62,7 +62,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 3%;
-    color: rgb(66, 177, 23);
+    color: #15803D;
 }
 
 .products-container {
@@ -78,8 +78,8 @@ body {
     width: 410px;
     height: 460px;
     /* border: 1px solid grey; */
-    border-radius: 8px;
-    padding: 10px;
+    /* border-radius: 8px; */
+    padding: 5px;
     font-family: "Poppins";
     background-color: #ffffff;
     margin-bottom: 2rem;
@@ -89,8 +89,7 @@ body {
 
 .single-card:hover {
     border: 1px solid grey;
-    border-radius: 8px;
-    background-color: rgba(138, 180, 78, .3);
+    border-radius: 8px;   
 }
 
 .card-des {
@@ -108,14 +107,12 @@ body {
 .card-img {
     width: 100%;
     height: 250px;
-
-
 }
 
 
 /* product.css */
 .card {
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 10px;
@@ -131,3 +128,14 @@ body {
     font-size: 24px;
     color: #333;
 }
+
+.py-10{
+ padding-top: 5rem;
+}
+
+/* styles.css */
+
+.custom-text-color {
+    color: #15803D; /* Your desired color */
+  }
+  
