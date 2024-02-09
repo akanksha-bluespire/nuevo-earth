@@ -88,19 +88,18 @@ const Products = () => {
               <div>
                 <h1 className='titleHead text-2xl sm:text-4xl'>{product?.name}</h1>
                 <p className="text-sm sm:text-base">{product?.description}</p>
+                <div className="pt-5 ">
+                  <button
+                    className="bg-green-700 mb-[2%] px-3 py-1.5 text-white"
+                    onClick={() => {
+                      router.push(`/products/view?id=${product?.id}`);
+                      localStorage.setItem("product", JSON.stringify(product));
+                    }}
+                  >
+                    View Product
+                  </button>
+                </div>
               </div>
-              <div>
-                <button
-                  className="bg-green-700 mb-[2%] px-4 py-3 text-white"
-                  onClick={() => {
-                    router.push(`/products/view?id=${product?.id}`);
-                    localStorage.setItem("product", JSON.stringify(product));
-                  }}
-                >
-                  View Product
-                </button>
-              </div>
-
             </div>
             <div className="Header">
               <Image src={product?.image} alt="image1 " width={500} height={700} className='tech2'></Image>
