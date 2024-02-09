@@ -50,10 +50,17 @@ const View = () => {
           {product?.content.map((item: ProductItem, index: number) => (
             <div className="single-card transition-transform transform hover:scale-105" key={index}>
               <div className="card-img ">
-                <img
+                {/* <img
                   src={item.image}
                   alt={item.name}
-                  className="object-cover w-full h-full" />
+                  className="object-cover w-full h-full" /> */}
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    className="object-cover w-full h-full"
+                    width={300} // Set width and height as per your requirements
+                    height={200}
+                    />
               </div>
               <p className="text-black font-bold text-2xl justify-center font-poppins px-3 py-3">{item?.name}</p>
               <p className="card-des">{item?.description}</p>
