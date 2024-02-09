@@ -12,10 +12,10 @@ const clientsData = [
 const Clients = () => {
   return (
     <div className='mx-[3%] bg-gradient-to-r'>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {clientsData.map((client, index) => (
           <div key={index} className=' bg-white  rounded-md flex flex-col items-center justify-center'>
-            <img src={client.logoSrc} alt={`${client.name} Logo`}  className='mb-2'/>
+            <img src={client.logoSrc} alt={`${client.name} Logo`} className='mb-2' />
             <span className='text-center font-semibold'>{client.name}</span>
           </div>
         ))}

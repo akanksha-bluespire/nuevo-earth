@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ['var(--font-poppins)'],
-        Lora: ['var(--font-Lora'],
+        Lora: ['var(--font-Lora)'],
 
       },
     },
