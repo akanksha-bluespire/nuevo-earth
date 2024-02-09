@@ -55,7 +55,7 @@ const View = () => {
                   alt={item.name}
                   className="object-cover w-full h-full" />
               </div>
-              <p className="text-black font-bold text-2xl justify-center font-poppins py-3">{item?.name}</p>
+              <p className="text-black font-bold text-2xl justify-center font-poppins px-3 py-3">{item?.name}</p>
               <p className="card-des">{item?.description}</p>
             </div>
           ))}
