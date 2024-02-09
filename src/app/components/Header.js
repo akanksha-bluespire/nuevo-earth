@@ -116,7 +116,7 @@ const Header = () => {
           hover:after:w-[50%] 
           after:bottom-0 
           after:right-[50%]">
-            <Link href="/services/Servicesmainpage">Services</Link>
+            <Link href="/services">Services</Link>
           </li>
           <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm  mb-2 md:mb-0 pb-0.5
           relative 
