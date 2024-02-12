@@ -1,19 +1,42 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.addEventListener('scroll', handleScroll);
+    }
+  }, []);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const megaMenuData = {
+    Products: [
+      { name: 'E Permits', href: '/products/view' },
+      { name: 'E-Compliance', href: '/products/view' },
+      { name: 'Other Applications', href: '/products/view' },
+    ],
+    Services: [
+      { name: 'Digital Transformation', href: '/services/servicestab1' },
+      { name: 'Environmental Software Consulting Services', href: '/services/servicestab2' },
+      { name: 'Environmental Software Assessment', href: '/services/servicestab3' },
+    ],
+  };
 
   return (
-    <div className="text-white font-bold p-2 md:p-3 fixed top-0 left-0 z-50 w-full bg-sky-900">
+    <div className={`text-white font-bold fixed top-0 left-0 z-50 w-full p-3 md:p-4 transition duration-300 ${scrollY > 300 ? 'bg-sky-900' : 'bg-transparent'}`}>
       <div className="flex justify-between items-center pr-3 pl-3">
         {/* Logo and Home Link */}
         <div className="cursor-pointer">
@@ -64,7 +87,7 @@ const Header = () => {
         after:right-[50%]`}>
             <Link href="/" >Home</Link>
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm  mb-2 md:mb-0 pb-0.5
+          <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm  mb-2 md:mb-0 pb-0.5 group
           relative 
           hover:text-sky-400 
           transition-all 
@@ -90,8 +113,19 @@ const Header = () => {
           after:bottom-0 
           after:right-[50%]">
             <Link href="/products">Products</Link>
+            <div className="absolute bg-white text-gray-800 rounded-lg shadow-lg py-2 w-44 mt-3 group-hover:flex left-[-100%] justify-center hidden">
+              <div className="px-4 py-2 ">
+                {megaMenuData.Products.map(({ name, href }) => (
+                  <Link key={name} href={href} className="block py-1 hover:text-sky-500 mb-2">
+                    {name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm  mb-2 md:mb-0 pb-0.5
+          <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm  mb-2 md:mb-0 pb-0.5 group
           relative 
           hover:text-sky-400 
           transition-all 
@@ -116,7 +150,17 @@ const Header = () => {
           hover:after:w-[50%] 
           after:bottom-0 
           after:right-[50%]">
-            <Link href="/services/Servicesmainpage">Services</Link>
+            <Link href="/services">Services</Link>
+            <div className="absolute bg-white text-gray-800 rounded-lg shadow-lg py-2 w-72 mt-3 group-hover:flex left-[-160%] justify-center hidden">
+              <div className="px-4 py-2 ">
+                {megaMenuData.Services.map(({ name, href }) => (
+                  <Link key={name} href={href} className="block py-1 hover:text-sky-500 mb-2">
+                    {name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
           </li>
           <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm  mb-2 md:mb-0 pb-0.5
           relative 
@@ -174,7 +218,9 @@ const Header = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </div >
+
+
   );
 };
 

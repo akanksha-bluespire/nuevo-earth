@@ -35,6 +35,7 @@ const Carousel = () => {
         autoplay: true,
         arrows: false,
         autoplaySpeed: 2000,
+        
 
 
 

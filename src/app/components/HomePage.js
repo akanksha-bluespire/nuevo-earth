@@ -22,9 +22,6 @@ const HomePage = () => {
               <Image src="./arrow.svg" alt="arrow" width={20} height={20}></Image>
             </div>
           </Link>
-
-
-
         </div>
       </div>
     </div >
