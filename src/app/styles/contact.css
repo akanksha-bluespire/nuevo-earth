@@ -1,70 +1,134 @@
 .section1 {
-    color: black;
-    padding-left: 10%;
+  color: black;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  color: black;
+  padding-left: 10%;
+}
+
+.left,
+.first_name {
+  float: left;
+}
+
+.right {
+  border: solid black;
+  padding: 50px;
+  display: flex;
+  margin-right: 200px;
+
+}
+
+.last_name {
+  float: right;
+}
+
+.input1 {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.message {
+  width: 100%;
+  height: 200%;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.textarea {
+  border: 2px solid black;
+  width: 100%;
+  padding: 10px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  width: 21%;
+  cursor: pointer;
+  border-radius: 10px;
+  border: #4CAF50;
+}
+
+.h1 {
+  font-size: 50px;
+}
+
+.p {
+  font-size: 25px;
+}
+
+.h2 {
+  font-size: 25px;
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .section1 {
+    padding-left: 5%;
     padding-top: 5%;
   }
+
   .section2 {
-    display:flex;
-    justify-content: space-between;
-    padding-top: 10%;
-    padding-bottom: 5%;
-    color: black;
-    padding-left: 10%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5%;
   }
-  .left, .first_name {
-    float: left;
+
+  .left,
+  .right,
+  .first_name,
+  .last_name,
+  div label,
+  div input,
+  div textarea {
+    width: 100%;
+    float: none;
+    margin-right: 0;
   }
+
   .right {
-    border: solid black;
-    padding: 50px;
-    display: flex;
-    margin-right: 200px;
- 
+    margin-right: 0;
+    border: none;
+    padding: 20px;
   }
- 
-  .last_name {
-    float: right;
-  }
-  .input1 {
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    border: 2px solid black;
-  }
-  .message{
-    width: 100%;
-    height: 200%;
-    padding: 5px;
-    border: 2px solid black;
-  }
-  
+
+  .input1,
+  .message,
   .textarea {
-    border: 2px solid black;
     width: 100%;
     padding: 10px;
+    box-sizing: border-box;
   }
-  
+
   .button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    width: 21%;
-    cursor: pointer;
-    border-radius: 10px;
-    border: #4CAF50;
+    width: 100%;
   }
-  .h1{
-    font-size: 50px;
+
+  .h1 {
+    font-size: 40px;
   }
-  .p{
+
+  .p {
     font-size: 25px;
+    margin-bottom: 10px;
   }
-  .h2{
-    font-size: 25px;
+
+  .h2 {
+    font-size: 20px;
   }
- 
-  .required {
-    color: red;
-    margin-left: 5px;
-  }
-  
+}
