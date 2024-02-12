@@ -151,7 +151,6 @@ const Header = () => {
           after:bottom-0 
           after:right-[50%]">
             <Link href="/services">Services</Link>
-            <Link href="/services">Services</Link>
             <div className="absolute bg-white text-gray-800 rounded-lg shadow-lg py-2 w-72 mt-3 group-hover:flex left-[-160%] justify-center hidden">
               <div className="px-4 py-2 ">
                 {megaMenuData.Services.map(({ name, href }) => (
