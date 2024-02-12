@@ -71,20 +71,23 @@ const Products = () => {
 
   return (
     <div>
-      <div className="px-20 py-5 m-2">
+      {/* <div className="px-20 py-5 m-2"> */}
+      <div className="px-4 py-5 md:px-20 md:py-10 m-2">
         <div className='top flex flex-row-reverse flex-wrap gap-10'>
-          <div className="ServicesHeader">
+          {/* <div className="top flex flex-col sm:flex-row flex-wrap gap-5 md:gap-10"> */}
+          <div className="ServicesHeader sm:w-1/2">
             <h1 className='title cls justify-center pl-10 custom-text-color'>What we offers</h1>
             <p>{OurservicesHeader}</p>
           </div>
-          <div className="Header">
+          <div className="Header sm:w-1/2">
             <Image src={"/tech2.jpg"} alt="image1 " width={500} height={700} className='tech2'></Image>
           </div>
         </div>
 
         {products.map((product, index) => (
           <div key={product.id} className={index == 1 ? 'top flex flex-row-reverse flex-wrap items-stretch gap-5 product-box' : 'top flex flex-wrap items-stretch gap-5 product-box'}>
-            <div className="productHeader flex flex-col justify-between p-10">
+            {/* <div key={product.id} className={index == 1 ? 'top flex flex-col sm:flex-row items-stretch gap-5 md:gap-10 product-box' : 'top flex flex-wrap items-stretch gap-5 product-box'}> */}
+            <div className="productHeader flex flex-col justify-between p-4 sm:p-10">
               <div>
                 <h1 className='titleHead text-2xl sm:text-4xl'>{product?.name}</h1>
                 <p className="text-sm sm:text-base">{product?.description}</p>

@@ -19,7 +19,7 @@ body {
     border-radius: 10px;
     margin-bottom: 1rem;
     padding: 0 1rem;
-    background-color: #E5E4E2;
+    background-color: #f3e8dd;
 }
 
 .product-card {
@@ -136,6 +136,6 @@ body {
 /* styles.css */
 
 .custom-text-color {
-    color: #15803D; /* Your desired color */
+    color: #15803D; 
   }
   
