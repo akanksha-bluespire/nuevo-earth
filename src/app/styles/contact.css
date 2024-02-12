@@ -76,3 +76,59 @@
   color: red;
   margin-left: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .section1 {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5%;
+  }
+
+  .left,
+  .right,
+  .first_name,
+  .last_name,
+  div label,
+  div input,
+  div textarea {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  .right {
+    margin-right: 0;
+    border: none;
+    padding: 20px;
+  }
+
+  .input1,
+  .message,
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .h1 {
+    font-size: 40px;
+  }
+
+  .p {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .h2 {
+    font-size: 20px;
+  }
+}
