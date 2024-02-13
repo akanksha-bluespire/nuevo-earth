@@ -57,7 +57,7 @@ const Carousel = () => {
                 <Slider {...settings} className="mx-auto">
                     {services.map((service) => (
                         <div key={service.title} className='p-6 w-[60%] mx-auto text-center' >
-                            <p className='text-3xl font-bold mb-2 '>{service.title}</p>
+                            <p className='text-3xl font-bold mb-2'>{service.title}</p>
                         </div>
                     ))}
 
@@ -65,8 +65,6 @@ const Carousel = () => {
 
             </div >
         </div>
-
-
     );
 };
 
