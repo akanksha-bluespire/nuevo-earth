@@ -36,12 +36,12 @@ const Header = () => {
   };
 
   return (
-    <div className={`text-white font-bold fixed top-0 left-0 z-50 w-full p-3 md:p-4 transition duration-300 ${scrollY > 300 ? 'bg-sky-900' : 'bg-transparent'}`}>
-      <div className="flex justify-between items-center pr-3 pl-3">
+    <div className={`text-white font-bold fixed top-0 left-0 z-50 w-full p-4 md:p-3 transition duration-300 ${scrollY > 300 ? 'bg-sky-800' : 'bg-transparent'}`}>
+      <div className="flex justify-between items-center pr-5 pl-3 pt-0.5 pb-0.5">
         {/* Logo and Home Link */}
         <div className="cursor-pointer">
           <Link href="/">
-            <Image src="/Logo.png" alt="Logo" width={150} height={100} />
+            <Image src="/Logo.png" alt="Logo" width={150} height={120} />
           </Link>
         </div>
 
@@ -53,12 +53,12 @@ const Header = () => {
         {/* Navigation Links */}
         <ul
           className={`md:flex  ${mobileMenuOpen
-            ? 'fixed top-10 right-5 p-4 flex-col items-center justify-center bg-slate-900 text-white'
+            ? 'fixed top-10 right-5 w-1/3 p-4 flex flex-col justify-center bg-sky-900 text-white rounded'
             : 'hidden md:flex space-x-8'
             }`}
         >
 
-          <li className={`font-medium cursor-pointer text-white font-poppins text-sm md:text-sm mb-2 md:mb-0 pb-0.5
+          <li className={`font-medium cursor-pointer text-white font-poppins text-base md:text-base mb-2 md:mb-0 pb-0.5
           relative 
         hover:text-sky-400 
         transition-all 
@@ -69,7 +69,7 @@ const Header = () => {
         before:absolute 
         before:bg-sky-400 
         before:origin-center 
-        before:h-[1.5px] 
+        before:h-[1.5px]
         before:w-0 
         hover:before:w-[50%] 
         before:bottom-0
@@ -80,14 +80,15 @@ const Header = () => {
         after:absolute 
         after:bg-sky-400 
         after:origin-center 
-        after:h-[1.5px] 
+        after:h-[1.5px]
         after:w-0 
         hover:after:w-[50%] 
         after:bottom-0 
-        after:right-[50%]`}>
+        after:right-[50%]
+        `}>
             <Link href="/" >Home</Link>
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm  mb-2 md:mb-0 pb-0.5 group
+          <li className="font-medium cursor-pointer text-white font-poppins text-base md:text-base mb-2 md:mb-0 pb-0.5 group
           relative 
           hover:text-sky-400 
           transition-all 
@@ -113,7 +114,7 @@ const Header = () => {
           after:bottom-0 
           after:right-[50%]">
             <Link href="/products">Products</Link>
-            <div className="absolute bg-white text-gray-800 rounded-lg shadow-lg py-2 w-44 mt-3 group-hover:flex left-[-100%] justify-center hidden">
+            <div className={`${!mobileMenuOpen ? 'absolute bg-white text-gray-800 rounded-lg shadow-lg py-2 w-44 mt-3 group-hover:flex left-[-100%] justify-center hidden' : 'hidden'}`}>
               <div className="px-4 py-2 ">
                 {megaMenuData.Products.map(({ name, href }) => (
                   <Link key={name} href={href} className="block py-1 hover:text-sky-500 mb-2">
@@ -125,7 +126,7 @@ const Header = () => {
 
 
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm  mb-2 md:mb-0 pb-0.5 group
+          <li className="font-medium cursor-pointer text-white font-poppins text-base md:text-base  mb-2 md:mb-0 pb-0.5 group
           relative 
           hover:text-sky-400 
           transition-all 
@@ -151,7 +152,7 @@ const Header = () => {
           after:bottom-0 
           after:right-[50%]">
             <Link href="/services">Services</Link>
-            <div className="absolute bg-white text-gray-800 rounded-lg shadow-lg py-2 w-72 mt-3 group-hover:flex left-[-160%] justify-center hidden">
+            <div className={`${!mobileMenuOpen ? 'absolute bg-white text-gray-800 rounded-lg shadow-lg py-2 w-72 mt-3 group-hover:flex left-[-100%] justify-center hidden' : 'hidden'}`}>
               <div className="px-4 py-2 ">
                 {megaMenuData.Services.map(({ name, href }) => (
                   <Link key={name} href={href} className="block py-1 hover:text-sky-500 mb-2">
@@ -162,7 +163,7 @@ const Header = () => {
             </div>
 
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm  mb-2 md:mb-0 pb-0.5
+          <li className="font-medium cursor-pointer text-white font-poppins text-base md:text-base  mb-2 md:mb-0 pb-0.5
           relative 
           hover:text-sky-400 
           transition-all 
@@ -189,7 +190,7 @@ const Header = () => {
           after:right-[50%]">
             <Link href="/about">About</Link>
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-sm md:text-sm mb-2 md:mb-0 pb-0.5
+          <li className="font-medium cursor-pointer text-white font-poppins text-base md:text-base mb-2 md:mb-0 pb-0.5
           relative 
           hover:text-sky-400 
           transition-all 
