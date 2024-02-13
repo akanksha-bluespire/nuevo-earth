@@ -1,6 +1,8 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import "../../styles/product.css"
+import { useRouter } from 'next/navigation';
+
 // import "../../../../public/Nature.jpg"
 import "../../../../public/E-com.jpg"
 import "@fontsource/poppins";
@@ -13,6 +15,7 @@ interface ProductItem {
 }
 
 const View = () => {
+  const router = useRouter();
   const [openPanels, setOpenPanels] = useState<number[]>([]);
   const [product, setProduct] = useState<any>(null);
 
@@ -39,7 +42,8 @@ const View = () => {
   }
   console.log("productname", product)
   return (
-    <div className="px-20 ">
+    // <div className="px-20 ">
+    <div className="px-4 py-5 md:px-20 md:py-10">
       <h2 className="text-4xl font-bold text-center py-10 custom-text-color">
         Product Details
       </h2>
@@ -54,18 +58,29 @@ const View = () => {
                   src={item.image}
                   alt={item.name}
                   className="object-cover w-full h-full" /> */}
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    className="object-cover w-full h-full"
-                    width={300} // Set width and height as per your requirements
-                    height={200}
-                    />
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  className="object-cover w-full h-full"
+                  width={300} // Set width and height as per your requirements
+                  height={200}
+                />
               </div>
               <p className="text-black font-bold text-2xl justify-center font-poppins px-3 py-3">{item?.name}</p>
               <p className="card-des">{item?.description}</p>
             </div>
           ))}
+        </div>
+        <div className="pt-2 flex justify-end sm:pt-5">
+          <button
+            className="bg-green-700 mb-[2%] px-3 py-1.5 text-white"
+            onClick={() => {
+              router.push('/products')
+              localStorage.setItem("product", JSON.stringify(product));
+            }}
+          >
+            back
+          </button>
         </div>
       </div>
     </div>
