@@ -36,7 +36,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`text-white font-bold fixed top-0 left-0 z-50 w-full p-4 md:p-3 transition duration-300 ${scrollY > 300 ? 'bg-sky-800' : 'bg-transparent'}`}>
+    <div className={`text-white font-bold fixed top-0 left-0 z-50 w-full p-4 md:p-3 transition duration-300 ${scrollY > 300 ? 'bg-black' : 'bg-transparent'}`}>
       <div className="flex justify-between items-center pr-5 pl-3 pt-0.5 pb-0.5">
         {/* Logo and Home Link */}
         <div className="cursor-pointer">

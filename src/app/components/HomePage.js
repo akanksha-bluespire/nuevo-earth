@@ -6,7 +6,7 @@ import Link from 'next/link';
 const HomePage = () => {
   return (
     <div className='h-screen w-full bg-no-repeat bg-cover bg-center relative' style={{
-      backgroundImage: "url('nuevo1.png')",
+      backgroundImage: "url('../design/16.png')",
     }}>
       <div className='absolute top-0 left-0 w-full h-full' style={{
         backgroundColor: 'rgba(0, 0, 0, 0.3)',
@@ -14,7 +14,7 @@ const HomePage = () => {
       }}>
         <div className='flex flex-row h-[96%] w-full'>
           <div className='flex flex-1 flex-col justify-center items-start pl-12 md:pl-20 '>
-            <h2 className=' text-justify text-white font-bold font-Lora leading-normal mb-5 text-4xl sm:leading-snug md:text-4xl md:leading-snug lg:text-5xl lg:leading-normal'>
+            <h2 className=' text-justify text-white font-bold font-Lora leading-normal mb-5 text-4xl sm:leading-snug md:text-4xl md:leading-snug lg:text-5xl lg:leading-normal mt-[25%]'>
               Innovative Solutions for <br /> Environmental Compliance
             </h2>
             <Link href="/about">
