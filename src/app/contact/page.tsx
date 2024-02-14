@@ -65,6 +65,11 @@ const ContactPage = () => {
   return (
 
     <div>
+      <head>
+        <title>
+          Contact-NUEVO EARTH
+        </title>
+      </head>
       <div className="section1">
         <h1 className="h1">Contact</h1>
         <br />

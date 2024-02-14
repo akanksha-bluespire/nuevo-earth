@@ -54,7 +54,7 @@ const Carousel = () => {
 
     return (
         <div>
-            <div className=' max-w-full h-ful max-h-50 bg-gradient-to-r from-white 40% to-blue-500 p-10 relative '>
+            <div className=' max-w-full h-ful max-h-50 bg-gradient-to-r from-white 40% via-blue-300 to-white p-32 relative mt-[7%] mb-[7%]'>
                 <Slider {...settings} className="mx-auto">
                     {services.map((service) => (
                         <div key={service.title} className='p-6 w-[60%] mx-auto text-center' >

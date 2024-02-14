@@ -71,6 +71,11 @@ const Products = () => {
 
   return (
     <div>
+      <head>
+        <title>
+          products-NUEVO EARTH
+        </title>
+      </head>
       {/* <div className="px-20 py-5 m-2"> */}
       <div className="px-4 py-5 md:px-20 md:py-10 m-2">
         <div className='top flex flex-row-reverse flex-wrap gap-10'>

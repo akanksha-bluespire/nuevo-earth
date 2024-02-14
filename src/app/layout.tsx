@@ -19,11 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href='/icon.png' />
+      </head>
       <body className={inter.className} >
+        <div>
         <Header />
         {children}
         <Footer />
         <ScrollToTopButton />
+        </div>
       </body>
     </html>
   )

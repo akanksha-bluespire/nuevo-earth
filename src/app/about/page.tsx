@@ -8,6 +8,11 @@ import OurTeam from "../components/OurTeam"
 export default function Home() {
   return (
     <div className="background">
+      <head>
+        <title>
+         About-NUEVO EARTH
+        </title>
+      </head>
       <WhoWeAre />
       <OurMission />
       <PartnersAndOrganizations />

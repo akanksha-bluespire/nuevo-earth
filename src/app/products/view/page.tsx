@@ -49,8 +49,8 @@ const View = () => {
       </h2>
 
       {/* Use grid and create a 3x3 grid for the cards */}
-      <div className=" bg-gray-200 pt-5 pb-1 pl-5 pr-5 rounded-xl bg-gradient-to-t from-white 40% to-green-200">
-        <div className="flex flex-wrap items-center justify-between py-2">
+      <div className="  pt-5 pb-1 pl-5 pr-5 rounded-xl ">
+        <div className="flex flex-wrap items-center justify-center gap-24">
           {product?.content.map((item: ProductItem, index: number) => (
             <div className="single-card transition-transform transform hover:scale-105" key={index}>
               <div className="card-img ">

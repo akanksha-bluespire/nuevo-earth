@@ -12,9 +12,12 @@ const Servicesmainpage = () => {
       const cards = useRef<HTMLDivElement>(null);
       return (
             <div>
+                  <head>
+                        <title>NUEVO EARTH</title>
+                  </head>
                   <div className='w-full h-full bg-cover' >
                         <div className="flex justify-center items-center flex-col">
-                              <div className="w-full h-screen bg-[url('https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg')] bg-cover bg-center">
+                              <div className="w-full h-screen bg-[url('https://www.greenply.com/assets/our_vi/forest-mangement.png')] bg-cover bg-center">
                                     <div className="w-full h-full flex flex-col justify-center items-center backdrop-brightness-50 opa">
                                           <h1 className="text-white text-6xl text-center font-bold ml-[25%] mr-[25%] transition-transform transform hover:scale-125 font-Lora" >Services We Provide</h1>
                                           <p className="text-white text-center ml-[7%] mr-[7%] mt-5 mb-5 text-lg font-poppins">

@@ -12,6 +12,11 @@ import Cards from './components/Cards';
 const Home = () => {
   return (
     <div className="w-full">
+      <head>
+        <title>
+          NUEVO EARTH
+        </title>
+      </head>
 
       <HomePage />
       <div className="container mx-auto mt-8 mb-8">
