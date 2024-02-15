@@ -5,10 +5,10 @@ import Link from 'next/link';
 const keypoints = () => {
   return (
     <div>
-      <h2 className="font-Lora font-bold text-3xl text-black ml-[8%] pt-[6%]">Principle Features</h2>
+      <h2 className="font-Lora font-bold text-3xl text-black ml-[8%] mt-[3%]">Principle Features</h2>
 
       {/* Division 1 */}
-      <div className="flex flex-col-reverse md:flex-row md:flex-wrap-reverse m-[5%]">
+      <div className="flex flex-col-reverse md:flex-row md:flex-wrap-reverse m-[2%]">
         <div className='flex-1'>
           <Image src="/1.jpeg" alt="keypointsimage" width={500} height={500} className='flex-1 p-10' layout='responsive' />
         </div>

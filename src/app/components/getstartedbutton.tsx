@@ -11,7 +11,7 @@ const GetStartedButton: React.FC<GetStartedButtonProps> = ({ scrollToRef }) => {
     }
   };
   return (
-    <div>
+    <div className='getstartedbutton'>
       <button className=" mb-[2%] px-5 py-4 text-white btn btn-outline hover:bg-white hover:text-green-700 hover:border-none" onClick={handleGetStartedClick}>
         Get Started
       </button>

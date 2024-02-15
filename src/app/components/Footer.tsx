@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import Image from "next/image"
 const Footer = () => {
   return (
-    <footer className="mt-auto  bg-sky-950 text-white">
+    <footer className="mt-auto  bg-lime-900 text-white">
       <div className="py-6 pl-6">
         <Image src="/Nuevoearthlogo.png" alt="Logo" width={150} height={100} />
       </div>

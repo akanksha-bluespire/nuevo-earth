@@ -36,7 +36,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`text-white font-bold fixed top-0 left-0 z-50 w-full p-4 md:p-3 transition duration-300 ${scrollY > 300 ? 'bg-black' : 'bg-transparent'}`}>
+    <div className={`text-white font-bold fixed top-0 left-0 z-50 w-full p-4 md:p-3 transition duration-300 ${scrollY > 300 ? 'bg-lime-800' : 'bg-transparent'}`}>
       <div className="flex justify-between items-center pr-5 pl-3 pt-0.5 pb-0.5">
         {/* Logo and Home Link */}
         <div className="cursor-pointer">
@@ -113,7 +113,7 @@ const Header = () => {
           hover:after:w-[50%] 
           after:bottom-0 
           after:right-[50%]">
-            <Link href="/products">Products</Link>
+            <Link href="/productspage">Products</Link>
             <div className={`${!mobileMenuOpen ? 'absolute bg-white text-gray-800 rounded-lg shadow-lg py-2 w-44 mt-3 group-hover:flex left-[-100%] justify-center hidden' : 'hidden'}`}>
               <div className="px-4 py-2 ">
                 {megaMenuData.Products.map(({ name, href }) => (
@@ -215,8 +215,10 @@ const Header = () => {
           hover:after:w-[50%] 
           after:bottom-0 
           after:right-[50%]">
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact" >Contact</Link>
+            
           </li>
+          
         </ul>
       </div>
     </div >

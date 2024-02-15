@@ -18,7 +18,7 @@ const HomePage = () => {
               Innovative Solutions for <br /> Environmental Compliance
             </h2>
             <Link href="/about">
-              <div className='flex items-center border text-white border-white p-2 md:p-3 rounded-md space-x-3 justify-center hover:bg-white hover:text-green-700 hover:border-transparent cursor-pointer '>
+              <div className='flex items-center border text-white border-white p-2 md:p-3 rounded-md space-x-3 justify-center hover:bg-white hover:text-lime-800 hover:border-transparent cursor-pointer '>
                 <button className=' font-poppins font-semibold '>Know more</button>
                 <Image src="./arrow.svg" alt="arrow" width={20} height={20}></Image>
               </div>

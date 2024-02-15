@@ -6,7 +6,7 @@ export default function PartnersAndOrganizations() {
   return (
     <>
       <div className="partners">
-        <div className="text-center mb-10"><h2 className="mb-4 text-3xl font-semibold">Partners & Organizations we belong to</h2></div>
+        <div className="text-center mb-10"><h2 className="mb-4 text-3xl font-semibold text-lime-700 ">Partners & Organizations we belong to</h2></div>
         <div className="partnersContainer">
           {partnersAndOrganizations.map((partner, index) => (
             <div key={index}>
