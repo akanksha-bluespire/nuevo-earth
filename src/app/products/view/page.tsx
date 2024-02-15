@@ -44,7 +44,7 @@ const View = () => {
   return (
     // <div className="px-20 ">
     <div className="px-4 py-5 md:px-20 md:py-10">
-      <h2 className="text-4xl font-bold text-center py-10 custom-text-color">
+      <h2 className="text-4xl font-bold text-center py-10 text-lime-800">
         Product Details
       </h2>
 
@@ -73,13 +73,13 @@ const View = () => {
         </div>
         <div className="pt-2 flex justify-end sm:pt-5">
           <button
-            className="bg-green-700 mb-[2%] px-3 py-1.5 text-white"
+            className="btn btn-outline border-lime-800 text-lime-800 hover:bg-lime-800 hover:text-white hover:border-lime-800 px-7"
             onClick={() => {
-              router.push('/products')
+              router.push('/productspage')
               localStorage.setItem("product", JSON.stringify(product));
             }}
           >
-            back
+            Back
           </button>
         </div>
       </div>

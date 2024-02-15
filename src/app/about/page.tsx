@@ -4,6 +4,7 @@ import PartnersAndOrganizations from '../components/PartnersAndOrganizations'
 import Quote from '../components/Quote'
 import WhoWeAre from '../components/WhoWeAre'
 import OurTeam from "../components/OurTeam"
+import React from 'react'
 
 export default function Home() {
   return (

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import "../styles/contact.css"
 import Image from 'next/image';
+import Contactform from '../components/Contactform';
 interface FormData {
   firstname: string;
   lastname: string;
@@ -70,6 +71,10 @@ const ContactPage = () => {
         <title>
           Contact-NUEVO EARTH
         </title>
+      
+      <div>
+        <Contactform/>
+      </div>
         <div className="flex justify-center items-center flex-col">
                               <div className="w-full h-1/2 bg-[url('/design/6.png')] bg-cover bg-center">
                                     <div className="w-full h-full backdrop-brightness-50  pt-[17%] pl-[7%] pb-[4%]">

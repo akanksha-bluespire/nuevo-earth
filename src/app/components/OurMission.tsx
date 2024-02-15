@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { ourMission } from "../../../utils/constants"
 import "../styles/about.css"
+import React from 'react'
 export default function OurMission() {
     return (
         <div className="flexContainer2">
@@ -15,7 +16,7 @@ export default function OurMission() {
             </div>
 
             <div className="ourMissionContent">
-                <h2 className="mb-4 text-3xl font-semibold text-lime-700 ">Our mission</h2>
+                <h2 className="mb-4 text-3xl font-semibold  ">Our mission</h2>
                 <p>{ourMission}</p>
             </div>
         </div>

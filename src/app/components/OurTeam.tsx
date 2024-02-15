@@ -1,9 +1,10 @@
 import "../styles/about.css"
+import React from 'react'
 import { teamList } from "../../../utils/constants"
 export default function OurTeam() {
   return (
     <div className="partners">
-      <div className="text-center mb-10"><h2 className="mb-4 text-3xl font-semibold text-lime-700">Meet the Team</h2></div>
+      <div className="text-center mb-10"><h2 className="mb-4 text-3xl font-semibold ">Meet the Team</h2></div>
       <div className="partnersContainer">
         {teamList.map((teamMember, index) => (
           <div key={index} className="partners-list">
