@@ -20,7 +20,7 @@ type Product = {
   };
   
 
-const page3 : React.FC<ProductsPageProps> = ({ totalScrolls }) => {
+const Page3 : React.FC<ProductsPageProps> = ({ totalScrolls }) => {
 
     const router = useRouter();
     const [products, setProducts] = useState<Product[]>([
@@ -298,4 +298,4 @@ const page3 : React.FC<ProductsPageProps> = ({ totalScrolls }) => {
   )
 }
 
-export default page3
+export default Page3
