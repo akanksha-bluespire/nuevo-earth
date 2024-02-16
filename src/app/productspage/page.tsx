@@ -7,7 +7,6 @@ import Tree from '../components/Tree'
 
 interface ProductsPageProps {
     totalScrolls: number;
-    divisions: number;
   }
   
 type Product = {
@@ -119,8 +118,8 @@ const ProductPage : React.FC<ProductsPageProps> = ({ totalScrolls }) => {
         </div>
       </div>
     ))}
-                </div>
-                </div>
+        </div>
+        </div>
         </div>
         </div>
 
