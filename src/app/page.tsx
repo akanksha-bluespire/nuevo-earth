@@ -1,7 +1,7 @@
 import React from 'react'
 import AnimatedCounter from "./components/AnimatedCounter";
 import HomePage from "./components/HomePage";
-import Carousel from "./components/Carousel";
+import Carousel from "./components/Carousel.jsx";
 import Clients from "./components/Clients";
 // import EmpowerComp from "./components/EmpowerComp"
 import 'tailwindcss/base.css';
@@ -12,6 +12,7 @@ import Cards from './components/Cards';
 const Home = () => {
   return (
     <div className="w-full">
+      <title>NUEVO-EARTH</title>
 
       <HomePage />
       <div className="container mx-auto mt-8 mb-8">
@@ -26,7 +27,7 @@ const Home = () => {
         <AnimatedCounter label="Team Members" endCount={40} className="flex-1" />
       </div>
 
-      <div>
+      <div className='pt-[5%]'>
         <h2 className='text-3xl font-bold text-center mb-10'>What we do</h2>
         <Cards />
       </div>

@@ -4,15 +4,15 @@ import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import Image from "next/image"
 const Footer = () => {
   return (
-    <footer className="mt-auto  bg-sky-950 text-white">
+    <footer className="mt-auto  bg-lime-900 text-white">
       <div className="py-6 pl-6">
-        <Image src="/Logo.png" alt="Logo" width={150} height={100} />
+        <Image src="/Nuevoearthlogo.png" alt="Logo" width={150} height={100} />
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-around">
         <div className="mb-4 md:mb-0">
           <p className='font-poppins'>
-            <Link href="/products">
+            <Link href="/productspage">
               Products
             </Link>
           </p>

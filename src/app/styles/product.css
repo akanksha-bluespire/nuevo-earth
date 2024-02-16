@@ -19,7 +19,7 @@ body {
     border-radius: 10px;
     margin-bottom: 1rem;
     padding: 0 1rem;
-    background-color: #f3e8dd;
+   
 }
 
 .product-card {
@@ -87,10 +87,10 @@ body {
     position: relative;
 }
 
-.single-card:hover {
+/* .single-card:hover {
     border: 1px solid grey;
     border-radius: 8px;   
-}
+} */
 
 .card-des {
     height: 150px;
@@ -138,4 +138,4 @@ body {
 .custom-text-color {
     color: #15803D; 
   }
-  
+

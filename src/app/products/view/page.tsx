@@ -44,13 +44,13 @@ const View = () => {
   return (
     // <div className="px-20 ">
     <div className="px-4 py-5 md:px-20 md:py-10">
-      <h2 className="text-4xl font-bold text-center py-10 custom-text-color">
+      <h2 className="text-4xl font-bold text-center py-10 text-lime-800">
         Product Details
       </h2>
 
       {/* Use grid and create a 3x3 grid for the cards */}
-      <div className=" bg-gray-200 pt-5 pb-1 pl-5 pr-5 rounded-xl bg-gradient-to-t from-white 40% to-green-200">
-        <div className="flex flex-wrap items-center justify-between py-2">
+      <div className="  pt-5 pb-1 pl-5 pr-5 rounded-xl ">
+        <div className="flex flex-wrap items-center justify-center gap-24">
           {product?.content.map((item: ProductItem, index: number) => (
             <div className="single-card transition-transform transform hover:scale-105" key={index}>
               <div className="card-img ">
@@ -73,13 +73,13 @@ const View = () => {
         </div>
         <div className="pt-2 flex justify-end sm:pt-5">
           <button
-            className="bg-green-700 mb-[2%] px-3 py-1.5 text-white"
+            className="btn btn-outline border-lime-800 text-lime-800 hover:bg-lime-800 hover:text-white hover:border-lime-800 px-7"
             onClick={() => {
-              router.push('/products')
+              router.push('/productspage')
               localStorage.setItem("product", JSON.stringify(product));
             }}
           >
-            back
+            Back
           </button>
         </div>
       </div>
