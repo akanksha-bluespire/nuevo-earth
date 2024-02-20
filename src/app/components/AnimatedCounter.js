@@ -28,9 +28,9 @@ const AnimatedCounter = ({label,endCount, className}) => {
     },[]);
 
     return (
-        <div className='text-center mx-4'>
+        <div className='text-center mx-10 mb-[7%]'>
             <h2 className='text-xl font-semibold mb-4'>{label}</h2>
-            <p className='text-3xl font-semibold text-green-500'>{count}+</p>
+            <p className='text-3xl font-semibold text-lime-700'>{count}+</p>
         </div>
     );
 };

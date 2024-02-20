@@ -18,7 +18,7 @@ const Carousel = () => {
             title: '2022 & 2018 NASCIO.2021 Granicus Digital Government.2021 Gartner Case Study.2020 CIO 100 awards and more',
         },
         {
-            title: 'Digital  enterprise e-permitting solution(myDEQ) saved Arrizona DEQ $XX million dollars',
+            title: 'Digital  enterprise e-permitting solution(myDEQ) saved Arizona DEQ $XX million dollars',
         },
         {
             title: 'Eliminate over 90% of application errors even before submittal',
@@ -35,6 +35,7 @@ const Carousel = () => {
         autoplay: true,
         arrows: false,
         autoplaySpeed: 2000,
+        
 
 
 
@@ -53,7 +54,7 @@ const Carousel = () => {
 
     return (
         <div>
-            <div className=' max-w-full h-ful max-h-50 bg-gradient-to-r from-white 40% to-blue-500 p-10 relative '>
+            <div className=' max-w-full h-ful max-h-50 bg-gradient-to-r from-white 40% via-lime-300 to-white p-32 relative mt-[7%] mb-[7%]'>
                 <Slider {...settings} className="mx-auto">
                     {services.map((service) => (
                         <div key={service.title} className='p-6 w-[60%] mx-auto text-center' >
