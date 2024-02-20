@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
-import withFonts from'next-fonts' ;
+const withFonts = require('next-fonts') ;
 
-export default withFonts({
+module.exports = withFonts({
     webpack(config, options) {
         return config;
     },
