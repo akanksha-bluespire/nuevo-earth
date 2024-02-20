@@ -38,7 +38,7 @@ const Header = () => {
 
   return (
     <div className={`text-white font-bold fixed top-0 left-0 z-50 w-full p-4 md:p-3 transition duration-300 ${scrollY > 300 ? 'bg-lime-800' : 'bg-transparent'}`}>
-      <div className="flex justify-between items-center pr-5 pl-3 pt-0.5 pb-0.5">
+      <div className="flex justify-between items-center pr-10 pl-3 pt-0.5 pb-0.5">
         {/* Logo and Home Link */}
         <div className="cursor-pointer">
           <Link href="/">
@@ -55,11 +55,11 @@ const Header = () => {
         <ul
           className={`md:flex  ${mobileMenuOpen
             ? 'fixed top-10 right-5 w-1/3 p-4 flex flex-col justify-center bg-lime-900 text-white rounded'
-            : 'hidden md:flex space-x-8'
+            : 'hidden md:flex space-x-10'
             }`}
         >
 
-          <li className={`font-medium cursor-pointer text-white font-poppins text-base md:text-base mb-2 md:mb-0 pb-0.5
+          <li className={`font-medium cursor-pointer text-white font-poppins text-lg md:text-lg mb-2 md:mb-0 pb-0.5
           relative 
         hover:text-lime-400 
         transition-all 
@@ -89,7 +89,7 @@ const Header = () => {
         `}>
             <Link href="/" >Home</Link>
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-base md:text-base mb-2 md:mb-0 pb-0.5 group
+          <li className="font-medium cursor-pointer text-white font-poppins text-lg md:text-lg mb-2 md:mb-0 pb-0.5 group
           relative 
           hover:text-lime-400 
           transition-all 
@@ -127,7 +127,7 @@ const Header = () => {
 
 
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-base md:text-base  mb-2 md:mb-0 pb-0.5 group
+          <li className="font-medium cursor-pointer text-white font-poppins text-lg md:text-lg  mb-2 md:mb-0 pb-0.5 group
           relative 
           hover:text-lime-400 
           transition-all 
@@ -164,7 +164,7 @@ const Header = () => {
             </div>
 
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-base md:text-base  mb-2 md:mb-0 pb-0.5
+          <li className="font-medium cursor-pointer text-white font-poppins text-lg md:text-lg  mb-2 md:mb-0 pb-0.5
           relative 
           hover:text-lime-400 
           transition-all 
@@ -191,7 +191,7 @@ const Header = () => {
           after:right-[50%]">
             <Link href="/about">About</Link>
           </li>
-          <li className="font-medium cursor-pointer text-white font-poppins text-base md:text-base mb-2 md:mb-0 pb-0.5
+          {/* <li className="font-medium cursor-pointer text-white font-poppins text-lg md:text-lg mb-2 md:mb-0 pb-0.5
           relative 
           hover:text-lime-400 
           transition-all 
@@ -218,12 +218,12 @@ const Header = () => {
           after:right-[50%]">
             <div className="dropdown dropdown-end">
               <Link href="">Contact</Link>
-              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-96">
+              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-lg-100 rounded-box w-96">
                 <Contactform/>
               </ul>
             </div>
             
-          </li>
+          </li> */}
           
         </ul>
       </div>

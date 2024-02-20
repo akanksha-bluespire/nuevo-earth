@@ -46,11 +46,10 @@ const keypoints = () => {
 
 
       <div>
-        <Link href="/services">
-          <button className="bg-green-700 mb-[6%] px-8 py-3 ml-[8%] text-white">
-            Back
-          </button>
-        </Link>
+      <Link href="/services">
+        <button className="btn btn-outline border-lime-800 text-lime-800 hover:bg-lime-800 mb-[8%] px-7 py-3 ml-[8%] hover:text-white hover:border-none">
+          Back</button>
+      </Link>
       </div>
 
     </div>

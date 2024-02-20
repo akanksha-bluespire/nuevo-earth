@@ -6,9 +6,9 @@ import React from 'react'
 const assessmentinfo = () => {
   return (
     <div>
-      <h2 className="font-Lora font-bold text-3xl text-black ml-[8%] pt-[6%]">Types of Assessments</h2>
+      <h2 className="font-Lora font-bold text-3xl text-black ml-[8%] pt-[2%]">Types of Assessments</h2>
       {/* Division 1 */}
-      <div className="flex flex-col-reverse md:flex-row md:flex-wrap-reverse m-[5%]">
+      <div className="flex flex-col-reverse md:flex-row md:flex-wrap-reverse m-[5%] mt-0">
         <div className="m-[5%] flex-1 text-justify justify-center items-center md:w-1/2">
           <h2 className="font-Lora font-bold text-black mt-4 mb-4 text-xl">Environmental Software Health Check</h2><p className='font-poppins '>We evaluate the health and effectiveness of your existing environmental software, identifying areas for improvement and optimization.</p>
           <h2 className="font-Lora font-bold text-black mt-[15%] mb-4 text-xl">Environmental Compliance Audits</h2><p className=' font-poppins '>Our team conducts thorough assessments to ensure your environmental software aligns with and supports compliance with environmental regulations, safeguarding your organization from non-compliance risks. </p>
@@ -41,11 +41,10 @@ const assessmentinfo = () => {
       </div>
 
       <div>
-        <Link href="/services">
-          <button className="bg-green-700 mb-[6%] px-8 py-3 ml-[8%] text-white">
-            Back
-          </button>
-        </Link>
+      <Link href="/services">
+        <button className="btn btn-outline border-lime-800 text-lime-800 hover:bg-lime-800 mb-[8%] px-7 py-3 ml-[8%] hover:text-white hover:border-none">
+          Back</button>
+      </Link>
       </div>
     </div>
 

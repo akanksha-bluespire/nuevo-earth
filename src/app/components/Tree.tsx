@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 interface TreeProps {
   totalScrolls: number;
+
 }
 
 const Tree: React.FC<TreeProps> = ({ totalScrolls }) => {
@@ -21,7 +22,7 @@ const Tree: React.FC<TreeProps> = ({ totalScrolls }) => {
 
       const scrollsPerPage = pageHeight / images.length;
 
-      const imageIndex = Math.floor(relativeScroll / scrollsPerPage) + (currentPage - 1) * (images.length / 3);
+      const imageIndex = Math.floor(relativeScroll / scrollsPerPage) + (currentPage - 1) * (images.length / 1.6);
       setCurrentImageIndex(Math.min(images.length - 1, Math.max(0, imageIndex)));
     };
 

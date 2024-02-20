@@ -3,12 +3,13 @@ import AnimatedCounter from "./components/AnimatedCounter";
 import HomePage from "./components/HomePage";
 import Carousel from "./components/Carousel.jsx";
 import Clients from "./components/Clients";
+import SlidingCards from './components/SlidingCards';
 // import EmpowerComp from "./components/EmpowerComp"
 import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
 import 'tailwindcss/utilities.css';
 import 'tailwindcss/tailwind.css'
-import Cards from './components/Cards';
+
 const Home = () => {
   return (
     <div className="w-full">
@@ -29,7 +30,7 @@ const Home = () => {
 
       <div className='pt-[5%]'>
         <h2 className='text-3xl font-bold text-center mb-10'>What we do</h2>
-        <Cards />
+         <SlidingCards/>
       </div>
 
       <div>
