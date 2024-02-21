@@ -42,6 +42,7 @@ const View = () => {
   }
   console.log("productname", product)
   return (
+    
     // <div className="px-20 ">
     <div className="px-4 py-5 md:px-20 md:py-10">
       <h2 className="text-4xl font-bold text-center py-10 text-lime-800">

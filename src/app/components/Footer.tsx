@@ -26,11 +26,11 @@ const Footer = () => {
               About
             </Link>
           </p>
-          <p className='font-poppins'>
+          {/* <p className='font-poppins'>
             <Link href="/contact">
               Contact
             </Link>
-          </p>
+          </p> */}
         </div>
 
         <div className="mb-4 md:mb-0 text-center">

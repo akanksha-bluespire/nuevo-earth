@@ -5,12 +5,12 @@ import Link from 'next/link'
 const consultinfo = () => {
   return (
     <div>
-      <h2 className="font-Lora font-bold text-3xl text-black ml-[6%] pt-[8%]">Fundamental Consultancy Aspects</h2>
+      <h2 className="font-Lora font-bold text-3xl text-black ml-[6%] pt-[5%]">Fundamental Consultancy Aspects</h2>
 
       {/* Division 1 */}
-      <div className="flex flex-col-reverse md:flex-row md:flex-wrap-reverse m-[5%]">
+      <div className="flex flex-col-reverse md:flex-row md:flex-wrap-reverse m-[5%] mt-0">
         <div className="m-[5%] flex-1 text-justify justify-center items-center md:w-1/2">
-          <h2 className="font-Lora font-bold text-black mt-4 mb-4 text-xl">Environmental Data Management</h2>
+          <h2 className="font-Lora font-bold text-black mt-2 mb-4 text-xl">Environmental Data Management</h2>
           <p className=' font-poppins'>We assist in optimizing your environmental data management processes, recommending software solutions that enhance data accuracy, accessibility, and reporting capabilities.</p>
           <h2 className="font-Lora font-bold text-black mt-[15%] mb-4 text-xl">Environmental Compliance Expertise</h2>
           <p className='font-poppins'>Our team of former environmental regulators offers invaluable insights into navigating complex environmental regulations through software solutions, ensuring your organization remains compliant while minimizing risks. </p>
@@ -34,11 +34,10 @@ const consultinfo = () => {
       </div>
 
       <div>
-        <Link href="/services">
-          <button className="bg-green-700 mb-[6%] px-8 py-3 ml-[8%] text-white">
-            Back
-          </button>
-        </Link>
+      <Link href="/services">
+        <button className="btn btn-outline border-lime-800 text-lime-800 hover:bg-lime-800 mb-[8%] px-7 py-3 ml-[8%] hover:text-white hover:border-none">
+          Back</button>
+      </Link>
       </div>
     </div>
   );

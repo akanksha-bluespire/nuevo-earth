@@ -27,7 +27,7 @@ const Servicesmainpage = () => {
                         </div>
                         <div className='flex m-[4%] flex-row justify-center items-center'>
                         {/* <Image src='/design/3.png' alt="services main page image" width={600} height={600}></Image> */}
-                        <p className=" text-center ml-[7%] mr-[7%] mt-5 text-2xl font-semibold font-poppins">
+                        <p className=" text-center ml-[7%] mr-[7%] mt-5 text-xl font-semibold font-poppins">
                               Nuevo Earth Solutions aim to empower environmental organizations and agencies to embrace digital innovation, enhance environmental data management, ensure regulatory compliance, and advance sustainability efforts through tailored software solutions and expert guidance.                            </p>
                         </div>              
                         <div ref={cards} className='pt-[6%]'>
@@ -38,7 +38,7 @@ const Servicesmainpage = () => {
                                     <p>{OurservicesFooter}</p>
                               </div>
                               <p className='mb-8'>{getintouch}</p>
-                              <Getintouch />
+                              {/* <Getintouch /> */}
                         </div>
 
                   </div>

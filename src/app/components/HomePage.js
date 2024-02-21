@@ -14,7 +14,8 @@ const HomePage = () => {
       }}>
         <div className='flex flex-row h-[96%] w-full'>
           <div className='flex flex-1 flex-col justify-center items-start pl-12 md:pl-20 '>
-            <h2 className=' text-justify text-white font-bold font-Lora leading-normal mb-5 text-4xl sm:leading-snug md:text-4xl md:leading-snug lg:text-5xl lg:leading-normal mt-[25%]'>
+            <h2 className=' text-justify text-white font-bold font-Lora leading-normal mb-5 text-4xl sm:leading-snug md:text-4xl md:leading-snug lg:text-5xl lg:leading-normal mt-[25%] '>
+              
               Innovative Solutions for <br /> Environmental Compliance
             </h2>
             <Link href="/about">

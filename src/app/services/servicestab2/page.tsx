@@ -11,21 +11,28 @@ const Servicepage2 = () => {
       const consultRef = useRef<HTMLDivElement>(null);
       return (
             <div>
-                  <div className='w-full h-full bg-cover' >
-                        <div className="flex justify-center items-center flex-col">
-                              <div className="w-full h-screen bg-[url('https://realitysolutions.co.uk/wp-content/uploads/2020/03/shutterstock_71639383-scaled.jpg')] bg-cover bg-center">
-                                    <div className="w-full h-full flex flex-col justify-center items-center backdrop-brightness-50 ">
-                                          <h1 className="text-white text-6xl text-center font-bold ml-[25%] mr-[25%] pt-5 font-Lora" >Environmental software Consulting Services</h1>
-                                          <p className="text-white text-center ml-[6%] mr-[6%] mt-5 mb-10  text-lg font-poppins">
-                                                Our Environmental Software Consulting Services offer expert guidance and strategic insights to environmental organizations seeking to enhance their software systems, streamline environmental data management, and address regulatory requirements. We leverage our deep understanding of both environmental science and technology to help you make informed decisions.                             </p>
+                  <div className="flex justify-center items-center flex-col">
+                              <div className="w-full h-1/2 bg-[url('/design/17.png')] bg-cover bg-center">
+                                    <div className="w-full h-full backdrop-brightness-50  pt-[17%] pl-[7%] pb-[4%]">
+                                          <h1 className="text-white text-6xl font-bold font-Lora" >Environmental software Consulting Services</h1>
+                                         
 
-
-                                          <Getstartedbutton scrollToRef={consultRef} />
+                                          {/* <Getstartedbutton scrollToRef={keypointsRef} /> */}
                                     </div>
+                                    
                               </div>
+                              <p className=" text-center  text-xl font-semibold mt-[5%] mr-[7%] ml-[7%] font-poppins ">
+                              Our Environmental Software Consulting Services offer expert guidance and strategic insights to environmental organizations seeking to enhance their software systems, streamline environmental data management, and address regulatory requirements. We leverage our deep understanding of both environmental science and technology to help you make informed decisions.                                          </p>
+                                         
                         </div>
-                        <div ref={consultRef} className='mt-[5%]'>
+                        
+                  <div className='w-full h-full bg-cover' >
+                        
+                        <div ref={consultRef} className=''>
                               <Consultinfo />
+                        </div>
+                        <div>
+                              
                         </div>
                   </div>
             </div>

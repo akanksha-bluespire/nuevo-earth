@@ -5,6 +5,7 @@ import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTopButton from './components/ScrollToTopButton'
+import Message from './components/message'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,10 +27,14 @@ export default function RootLayout({
       <body className={inter.className} >
         <div>
         <Header />
+        </div>
         {children}
         <Footer />
-        <ScrollToTopButton />
-        </div>
+        {/* <ScrollToTopButton /> */}
+        <div className='z-[1] fixed'>
+        <Message/>
+        </div> 
+        
       </body>
     </html>
   )

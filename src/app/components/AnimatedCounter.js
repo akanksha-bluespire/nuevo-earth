@@ -1,38 +1,59 @@
 'use client'
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
-const AnimatedCounter = ({label,endCount, className}) => {
-    const [count,setCount] = useState(0);
+const AnimatedCounter = ({ label, endCount, className }) => {
+  const [count, setCount] = useState(0);
+  const counterRef = useRef(null);
 
-    useEffect(()=>{        
-        const duration = 1000;
-        const steps = 50; 
-        const start = 0;
-
-        const increment = (endCount-start)/steps;
-
-        let currentCount = start;
-
-        const intervalId = setInterval(()=>{
-            currentCount += increment;
-            setCount(Math.ceil(currentCount));
-
-
-            if (currentCount >=endCount){
-                clearInterval(intervalId);
-            }
-        },duration/steps);
-
-        return () => clearInterval(intervalId);
-    },[]);
-
-    return (
-        <div className='text-center mx-10 mb-[7%]'>
-            <h2 className='text-xl font-semibold mb-4'>{label}</h2>
-            <p className='text-3xl font-semibold text-lime-700'>{count}+</p>
-        </div>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Start the counter animation when the element enters the viewport
+            animateCounter();
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0, // Adjust the threshold as needed
+      }
     );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const animateCounter = () => {
+    const duration = 1500;
+    const steps = 50;
+    const start = 0;
+
+    const increment = (endCount - start) / steps;
+
+    let currentCount = start;
+
+    const intervalId = setInterval(() => {
+      currentCount += increment;
+      setCount(Math.ceil(currentCount));
+
+      if (currentCount >= endCount) {
+        clearInterval(intervalId);
+      }
+    }, duration / steps);
+  };
+
+  return (
+    <div ref={counterRef} className={`text-center  mb-[7%] ${className}`}>
+      <h2 className='sm:text-xl text-sm font-semibold mb-4'>{label}</h2>
+      <p className='sm:text-3xl text-lg font-semibold text-lime-700'>{count}+</p>
+    </div>
+  );
 };
 
 export default AnimatedCounter;

@@ -12,7 +12,7 @@ const Servicepage1 = () => {
             <div>
                   <div className='w-full h-full bg-cover' >
                   <div className="flex justify-center items-center flex-col">
-                              <div className="w-full h-1/2 bg-[url('/design/9.png')] bg-cover bg-bottom">
+                              <div className="w-full h-1/2 bg-[url('/design/7.png')] bg-cover bg-top">
                                     <div className="w-full h-full backdrop-brightness-50  pt-[17%] pl-[7%] pb-[4%]">
                                           <h1 className="text-white text-6xl font-bold font-Lora" >Digital Transformation</h1>
                                          
@@ -21,10 +21,10 @@ const Servicepage1 = () => {
                                     </div>
                                     
                               </div>
-                              <p className=" text-center  text-2xl font-semibold mt-[5%] mr-[7%] ml-[7%] mb-[2%] font-poppins ">
+                              <p className=" text-center  text-xl font-semibold mt-[5%] mr-[7%] ml-[7%] mb-[2%] font-poppins ">
                                                 Our Digital Transformation Services for Environmental Software are designed to empower environmental organizations and agencies with cutting-edge technology solutions. We understand that the environmental sector faces unique challenges, and our services are tailored to help you modernize your operations while staying environmentally conscious.
                                           </p>
-                                          <ul className=' list-disc font-poppins  text-2xl flex flex-row flex-wrap justify-center items-center gap-8'>
+                                          <ul className=' list-disc font-poppins  text-xl flex flex-row flex-wrap justify-center items-center gap-8'>
                                                 <li>
                                                       <h2 className='font-semibold font-poppins'>Legacy System Migration</h2>
                                                 </li>
