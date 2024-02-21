@@ -12,8 +12,8 @@ export const teamList = [
     ["Udai Inuganti", "Partner", "udai.jpeg"]
 ]
 export const data = [
-    { title: "Nuevo Earth Core", description: "Subscribe to an industry-leading E-Permitting and Compliance Govtech platform built for regulators, by regulators." },
-    { title: "Custom Solutions", description: "Leverage our regulatory and technology expertise to create tailor-made software solutions that precisely align with your unique needs." },
-    { title: "Consulting", description: "Do not know where to begin or what you need? Engage our experts to assess and advise. We can further help you implement the findings. " },
-    { title: "Do It Yourself (DIY)", description: "You know what you need! Great. Let us help you develop the roadmap and implement it." },
+    { title: "Nuevo Earth Core", description: "Subscribe to an industry-leading E-Permitting and Compliance Govtech platform built for regulators, by regulators.",backgroundImage :"https://www.pixelstalk.net/wp-content/uploads/images1/Best-Plant-Photos.jpg" },
+    { title: "Custom Solutions", description: "Leverage our regulatory and technology expertise to create tailor-made software solutions that precisely align with your unique needs.",backgroundImage :"https://www.pixelstalk.net/wp-content/uploads/images1/Best-Plant-Photos.jpg"  },
+    { title: "Consulting", description: "Do not know where to begin or what you need? Engage our experts to assess and advise. We can further help you implement the findings. ",backgroundImage :"https://www.pixelstalk.net/wp-content/uploads/images1/Best-Plant-Photos.jpg"  },
+    { title: "Do It Yourself (DIY)", description: "You know what you need! Great. Let us help you develop the roadmap and implement it.",backgroundImage :"https://www.pixelstalk.net/wp-content/uploads/images1/Best-Plant-Photos.jpg"  },
 ];

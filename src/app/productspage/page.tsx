@@ -105,7 +105,7 @@ const ProductPage : React.FC<ProductsPageProps> = ({ totalScrolls }) => {
             </div>
             <div>
               <button
-                className='btn btn-outline border-lime-800 text-lime-800 hover:bg-lime-800 hover:text-white hover:border-lime-800'
+                className='btn btn-outline border-2 border-lime-800 text-lime-800 hover:bg-lime-800 hover:text-white hover:border-none'
                 onClick={() => {
                   router.push(`/products/view?id=${product?.id}`);
                   localStorage.setItem("product", JSON.stringify(product));

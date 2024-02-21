@@ -19,9 +19,9 @@ const Message = () => {
           <Image
             src='/cross-mark.png' // Replace with the path to your message icon for closing
             alt='Close icon'
-            width={85}
-            height={85}
-            className='m-0'
+            width={80}
+            height={80}
+            className='rounded-full '
             tabIndex={0}
             role="button"
             onClick={toggleForm}
@@ -31,9 +31,9 @@ const Message = () => {
           <Image
             src='/message.png' // Replace with the path to your message icon
             alt='Message icon'
-            width={100}
-            height={100}
-            className='m-0'
+            width={80}
+            height={80}
+            className='m-0 '
             tabIndex={0}
             role="button"
             onClick={toggleForm}
@@ -42,7 +42,8 @@ const Message = () => {
         {formVisible && (
           <ul
             tabIndex={0}
-            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box border-2 border-lime-800 w-96 m"
+            
+            className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box border-2 border-lime-800 w-80 text-xs"  
           >
             <ContactForm />
           </ul>

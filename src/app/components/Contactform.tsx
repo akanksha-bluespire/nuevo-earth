@@ -70,14 +70,14 @@ const ContactForm = () => {
         </div>
       )}
       
-      <div className='p-[5%] bg-lime-800'>
-            <Image src='/Nuevoearthlogo.png' alt='Nuevo Earth Logo' width={300} height={300}></Image>
-            <br></br>
-            <p className='font-poppins text-white text-sm text-center'>Better yet, meet us in person!</p>
+      <div className='p-5 bg-lime-800'>
+            <Image src='/Nuevoearthlogo.png' alt='Nuevo Earth Logo' width={300} height={300} className='mx-auto my-auto mb-2'></Image>
+           
+            <p className='font-poppins text-white text-xs text-center'>Better yet, meet us in person!</p>
         </div>
-    <div  className="m-[5%]">
-      <div className="mb-4">
-        <label htmlFor="firstName" className="block text-gray-700 font-bold mb-2">
+    <div  className="m-2">
+      <div className="mb-1">
+        <label htmlFor="firstName" className="block text-gray-700 font-bold mb-1">
           First Name *
         </label>
         <input
@@ -88,8 +88,8 @@ const ContactForm = () => {
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
-      <div className="mb-4">
-        <label htmlFor="lastName" className="block text-gray-700 font-bold mb-2">
+      <div className="mb-1">
+        <label htmlFor="lastName" className="block text-gray-700 font-bold mb-1">
           Last Name *
         </label>
         <input
@@ -100,8 +100,8 @@ const ContactForm = () => {
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
-      <div className="mb-4">
-        <label htmlFor="organization" className="block text-gray-700 font-bold mb-2">
+      <div className="mb-1">
+        <label htmlFor="organization" className="block text-gray-700 font-bold mb-1">
           Organization *
         </label>
         <input
@@ -112,8 +112,8 @@ const ContactForm = () => {
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
       </div>
-      <div className="mb-4">
-        <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
+      <div className="mb-1">
+        <label htmlFor="email" className="block text-gray-700 font-bold mb-1">
           Email *
         </label>
         <input
@@ -125,7 +125,7 @@ const ContactForm = () => {
         />
       </div>
       <div className="">
-        <label htmlFor="message" className="block text-gray-700 font-bold mb-2 ">
+        <label htmlFor="message" className="block text-gray-700 font-bold mb-1 ">
           Message
         </label>
         <textarea
@@ -133,16 +133,16 @@ const ContactForm = () => {
           value={formData.message}
           onChange={handleInputChange}
           placeholder='Craft your impactful message in 100 words or less '
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-none placeholder:italic placeholder:text-slate-400"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-28 resize-none placeholder:italic placeholder:text-slate-400"
         ></textarea>
-        <div className="text-right mt-2 text-gray-500">
+        <div className="text-right text-gray-500">
           {wordCount}/{maxWords} words
         </div>
       </div>
       <div className="flex items-center justify-center">
         <button
           type="submit"
-          className=" btn btn-outline border-lime-800 hover:bg-lime-800 hover:text-white hover:border-none text-lime-800 font-bold py-2 px-7 rounded focus:outline-none focus:shadow-outline m-[7%]"
+          className=" btn btn-outline border-lime-800 hover:bg-lime-800 hover:text-white hover:border-none text-lime-800 font-bold py-0  px-5 text-xs rounded focus:outline-none focus:shadow-outline m-2"
         >
           Send
         </button>

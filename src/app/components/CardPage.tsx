@@ -9,7 +9,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, imageUrl, description, redirection }) => {
   return (
-    <div className="card w-full h-90 sm:w-96 bg-base-100 rounded-none transition-transform transform hover:scale-105">
+    <div className="card w-full h-90 sm:w-96 bg-base-100 rounded-none transition-transform transform hover:scale-105 p-0">
       <figure>
         <img src={imageUrl} alt={title} className="w-full h-full object-cover rounded-none" />
       </figure>

@@ -15,7 +15,7 @@ const Tree: React.FC<TreeProps> = ({ totalScrolls }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const pageHeight = document.body.scrollHeight / 1.6; // Assuming the page is divided into 3 sections
+      const pageHeight = document.body.scrollHeight / 1.45; // Assuming the page is divided into 3 sections
 
       const currentPage = Math.floor(scrollPosition / pageHeight) + 1;
       const relativeScroll = scrollPosition % pageHeight;

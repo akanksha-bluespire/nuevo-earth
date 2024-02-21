@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-const SlidingCards = () => {
+const StackingSlider = () => {
   const data = [
     { title: "Nuevo Earth Core", description: "Subscribe to an industry-leading E-Permitting and Compliance Govtech platform built for regulators, by regulators." },
     { title: "Custom Solutions", description: "Leverage our regulatory and technology expertise to create tailor-made software solutions that precisely align with your unique needs." },
@@ -10,17 +10,17 @@ const SlidingCards = () => {
   ];
 
   // State to track the current active card index
-  const [activeCardIndex, setActiveCardIndex] = useState(4);
+  const [activeCardIndex, setActiveCardIndex] = useState(data.length-3);
 
-  // Function to handle previous button click
+ 
   const handlePrev = () => {
-    setActiveCardIndex(prevIndex => Math.min(4, prevIndex +1));
+    setActiveCardIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
 
-  // Function to handle next button click
   const handleNext = () => {
-    setActiveCardIndex(prevIndex => Math.max(1, prevIndex -1)); // Assuming 4 cards
+    setActiveCardIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
   };
+
 
   const activeIndex = (index) => {
     if (activeCardIndex === 4) {
@@ -52,25 +52,21 @@ const SlidingCards = () => {
       <style>
         {`
         .arrows {
-            margin-top: 50px; /* Adjust margin-top as needed */
-            margin-left:-100px;
+            margin-top: 20px; /* Adjust margin-top as needed */
+            margin-left:50px;
+            
           }
          
           .arrows button {
             margin: 0 10px; /* Adjust margin between buttons as needed */
-            padding: 10px 20px; /* Adjust padding as needed */
+            padding: 10px 30px; /* Adjust padding as needed */
             font-size: 16px; /* Adjust font size as needed */
-            background-color: #007bff; /* Button background color */
-            color: #ffffff; /* Button text color */
-            border: none; /* Remove button border */
             border-radius: 5px; /* Button border radius */
             cursor: pointer; /* Show pointer cursor on hover */
-          
+            border: 1px solid;
           }
          
-          .arrows button:hover {
-            background-color: #0056b3; /* Change button background color on hover */
-          }
+          
          
           .is--disabled-arrow {
             opacity: 0.2;
@@ -78,55 +74,59 @@ const SlidingCards = () => {
           }
           .main-content {
             z-index: 9999999999;
-            position: fixed;
-            top: 50;
-            left: 15%;
+            top:0;
+            left: 25%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: top;
             flex-flow: column;
-            height: 100vh;
+            height: 40vh;
             background: transparent;
+             margin-left:80px;
           }
           .noise {
             z-index: 9999999999;
-            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
+            height: 5vh;
             pointer-events: none;
             opacity: .06;
+            margin-top:5px;
+            
           }
           .card {
             position: absolute;
-            width: 250px; /* Adjust width as needed */
-            height: 150px; /* Adjust height as needed */
-            background-color: #a4bfc3; /* Sample background color */
+            width: 300px; /* Adjust width as needed */
+            height: 220px; /* Adjust height as needed */
+            background-color: white; /* Sample background color */
             border-radius: 10px; /* Add border radius if needed */
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow if needed */
+            box-shadow: 0px 0px 10px #3f6212; /* Add shadow if needed */
             overflow: hidden;
-            padding: 50px;
+            padding: 20px;
             transition: transform 1s ease;
             z-index: 1;
+            margin-left:-1050px;
+            border:2px solid  #3f6212;
           }
           .card.active {
             transform: translateX(calc(100% * var(--active-index)));
           }
           .card:nth-child(even) {
-            background-color: #aae0bc; /* Sample background color */
+            background-color: white; /* Sample background color */
           }
           .card:nth-child(4) {
             margin-right: -150px;
           }
           .card:nth-child(2) {
             margin-right: -50px;
+            
           }
           .card:nth-child(3) {
             margin-right: -100px;
           }
           .card:nth-child(3n) {
-            background-color: #f2fe9a; /* Sample background color */
+            //background-color: #f2fe9a; /* Sample background color */
           }
           .card-content {
             padding: 20px;
@@ -142,24 +142,25 @@ const SlidingCards = () => {
           }
          `}
       </style>
-      <canvas id="noise" className="noise" width="1536" height="695"></canvas>
+      <canvas id="noise" className="noise" width="1536"></canvas>
       <main role="main" className="main-content">
         <div className="container">
           <div className="slide_contain card-container">
             {data.map((item, index) => (
               <div key={index} className={`card ${activeCardIndex > 0 && activeCardIndex <= index? 'active' : ''}`} style={{ '--active-index': activeIndex(index) }}>
-                <div style={{ height: "20px" }}>
-                  <h2><p style={{ fontSize: '20px'}}>{item.title}</p></h2>
+                
+                <div style={{ height: "40px" }}>
+                  <b><h1><p style={{ fontSize: '25px'}}>{item.title}</p></h1></b>
                 </div>
-                <p style={{ fontSize: '15px' }}>{item.description}</p>
+                <p style={{ fontSize: '17px' }}>{item.description}</p>
               </div>
             ))}
           </div>
           <div className="arrows">
-            <button className="prev" onClick={handlePrev}>
+            <button className="prev btn-outline border-lime-800 text-lime-800 hover:bg-lime-800 hover:text-white hover:border-lime-800" onClick={handlePrev}>
               &lt; {/* Left arrow */}
             </button>
-            <button className="next" onClick={handleNext}>
+            <button className="next btn-outline border-lime-800 text-lime-800 hover:bg-lime-800 hover:text-white hover:border-lime-800" onClick={handleNext}>
               &gt; {/* Right arrow */}
             </button>
           </div>
@@ -169,6 +170,4 @@ const SlidingCards = () => {
   );
 };
 
-export default SlidingCards
-
-
+export default StackingSlider
