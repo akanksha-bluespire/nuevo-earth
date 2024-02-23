@@ -12,9 +12,3 @@ export const teamList = [
     ["Sudhakar Adda", "Partner", "sudhakar.jpeg"],
     ["Udai Inuganti", "Partner", "udai.jpeg"]
 ]
-export const data = [
-    { title: "Nuevo Earth Core", description: "Subscribe to an industry-leading E-Permitting and Compliance Govtech platform built for regulators, by regulators." },
-    { title: "Custom Solutions", description: "Leverage our regulatory and technology expertise to create tailor-made software solutions that precisely align with your unique needs." },
-    { title: "Consulting", description: "Do not know where to begin or what you need? Engage our experts to assess and advise. We can further help you implement the findings. " },
-    { title: "Do It Yourself (DIY)", description: "You know what you need! Great. Let us help you develop the roadmap and implement it." },
-];

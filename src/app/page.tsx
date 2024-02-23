@@ -3,12 +3,13 @@ import AnimatedCounter from "./components/AnimatedCounter";
 import HomePage from "./components/HomePage";
 import Carousel from "./components/Carousel.jsx";
 import Clients from "./components/Clients";
+import StackingSlider from './components/SlidingCards';
 // import EmpowerComp from "./components/EmpowerComp"
 import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
 import 'tailwindcss/utilities.css';
-import 'tailwindcss/tailwind.css'
-import Cards from './components/Cards';
+import 'tailwindcss/tailwind.css';
+import Cards from "./components/SlidingCards";
 const Home = () => {
   return (
     <div className="w-full">
@@ -26,16 +27,17 @@ const Home = () => {
         <AnimatedCounter label="Awards Received" endCount={25} className="flex-1" />
         <AnimatedCounter label="Team Members" endCount={40} className="flex-1" />
       </div>
-
-      <div className='pt-[5%]'>
+     
+      <div className='pt-[3%]'>
         <h2 className='text-3xl font-bold text-center mb-10'>What we do</h2>
-        <Cards />
+        <StackingSlider />
       </div>
 
-      <div>
+      <div  className='pt-[5%]'>
         <h2 className='text-3xl font-bold text-center mb-10'>Our Clients</h2>
         <Clients />
       </div>
+      
       <div className='mt-10'>
 
       </div>
